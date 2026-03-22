@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from './Layout.jsx';
+import SiteLayout from './components/layout/SiteLayout';
 import Home from './pages/Home';
 import Platform from './pages/Platform';
 import ForMTSOs from './pages/ForMTSOs';
 import HowItWorks from './pages/HowItWorks';
-import WhyMedScribeAI from './pages/WhyMedScribeAI';
 import Pricing from './pages/Pricing';
+import WhyUs from './pages/WhyUs';
 import RequestDemo from './pages/RequestDemo';
 import About from './pages/About';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -14,20 +14,20 @@ import TermsOfService from './pages/TermsOfService';
 function App() {
   return (
     <Router>
-      <Layout>
-        <Routes>
+      <Routes>
+        <Route element={<SiteLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/Platform" element={<Platform />} />
-          <Route path="/ForMTSOs" element={<ForMTSOs />} />
-          <Route path="/HowItWorks" element={<HowItWorks />} />
-          <Route path="/WhyMedScribeAI" element={<WhyMedScribeAI />} />
-          <Route path="/Pricing" element={<Pricing />} />
-          <Route path="/RequestDemo" element={<RequestDemo />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
-          <Route path="/TermsOfService" element={<TermsOfService />} />
-        </Routes>
-      </Layout>
+          <Route path="/platform" element={<Platform />} />
+          <Route path="/for-mtsos" element={<ForMTSOs />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/why-us" element={<WhyUs />} />
+          <Route path="/request-demo" element={<RequestDemo />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
+        </Route>
+      </Routes>
     </Router>
   );
 }

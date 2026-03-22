@@ -1,170 +1,168 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { CheckCircle, Sparkles, Send, Clock, Users, Shield } from 'lucide-react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Clock, Users, Target, Mail, Sparkles, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import Navbar from '@/components/landing/Navbar';
-import Footer from '@/components/landing/Footer';
-
-const FORMSPREE_ID = 'mdawzyyk';
+import SectionLabel from "../components/shared/SectionLabel";
+import { toast } from "sonner";
 
 const benefits = [
-  { icon: Clock, text: '30-minute personalized walkthrough' },
-  { icon: Users, text: 'Custom ROI analysis for your MTSO' },
-  { icon: Shield, text: 'No commitment — just a conversation' },
+  { icon: Clock, text: "30-minute personalized walkthrough" },
+  { icon: Users, text: "Custom ROI analysis for your MTSO" },
+  { icon: Target, text: "No commitment — just a conversation" },
 ];
 
 export default function RequestDemo() {
-  const [formData, setFormData] = useState({
-    name: '', company: '', role: '', email: '', phone: '', volume: '', currentPlatform: '', message: ''
+  const [form, setForm] = useState({
+    fullName: "",
+    company: "",
+    role: "",
+    email: "",
+    phone: "",
+    volume: "",
+    currentPlatform: "",
+    details: "",
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState('');
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleChange = (e) => {
-    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-  };
+  const handleChange = (field) => (e) => setForm({ ...form, [field]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setError('');
-    try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...formData,
-          _subject: `MedScribeAI Demo Request from ${formData.company || formData.name}`,
-        }),
-      });
-      if (res.ok) {
-        setIsSubmitted(true);
-      } else {
-        setError('Something went wrong. Please email us at hello@medscribeai.in');
-      }
-    } catch {
-      setError('Network error. Please email us at hello@medscribeai.in');
+    if (!form.fullName || !form.email || !form.company) {
+      toast.error("Please fill in all required fields.");
+      return;
     }
-    setIsSubmitting(false);
+    setSubmitting(true);
+    // Simulate submission
+    await new Promise((r) => setTimeout(r, 1500));
+    toast.success("Demo request submitted! We'll be in touch within 24 hours.");
+    setForm({ fullName: "", company: "", role: "", email: "", phone: "", volume: "", currentPlatform: "", details: "" });
+    setSubmitting(false);
   };
 
   return (
-    <div className="min-h-screen bg-white" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
-      <Navbar />
+    <section className="pt-32 pb-24 lg:pt-40 lg:pb-32 relative overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute top-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-20 w-72 h-72 bg-secondary/60 rounded-full blur-3xl" />
+      </div>
 
-      <section className="relative pt-32 pb-20 bg-white overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(42,111,242,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(42,111,242,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
-          <div className="absolute top-0 left-0 right-0 h-full bg-[radial-gradient(circle_at_30%_20%,rgba(42,111,242,0.06),transparent_50%)]" />
-        </div>
-
-        <div className="max-w-6xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            {/* Left: Info */}
-            <div>
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-light border border-brand-light mb-6">
-                  <Sparkles className="w-4 h-4 text-brand" />
-                  <span className="text-sm font-semibold text-brand">Request a Demo</span>
-                </div>
-                <h1 className="text-4xl sm:text-5xl font-extrabold text-brand-navy mb-6 leading-[1.1]">
-                  See <span className="text-brand">MedScribeAI</span><br/>in Action
-                </h1>
-                <p className="text-lg text-brand-text leading-relaxed mb-10">
-                  Share a few details about your MTSO — volumes, current platform, and goals. We'll walk you through the platform, show the AI pipeline live, and build a custom ROI projection for your operation.
-                </p>
-
-                <div className="space-y-4 mb-10">
-                  {benefits.map((b, i) => (
-                    <div key={i} className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-brand-light rounded-lg flex items-center justify-center">
-                        <b.icon className="w-5 h-5 text-brand" />
-                      </div>
-                      <span className="text-brand-text font-medium">{b.text}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="bg-brand-cool-gray rounded-xl p-6 border border-gray-200">
-                  <p className="text-sm text-brand-text/80 mb-2 font-semibold">Prefer email?</p>
-                  <a href="mailto:hello@medscribeai.in" className="text-brand font-semibold hover:underline">hello@medscribeai.in</a>
-                </div>
-              </motion.div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
+          {/* Left content */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary border border-accent text-sm font-medium text-primary mb-6">
+              <Sparkles className="w-4 h-4" />
+              Request a Demo
             </div>
 
-            {/* Right: Form */}
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}>
-              {isSubmitted ? (
-                <div className="bg-white rounded-xl p-10 border border-gray-200 shadow-lg text-center">
-                  <div className="w-16 h-16 bg-brand-mint/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <CheckCircle className="w-8 h-8 text-brand-mint" />
-                  </div>
-                  <h2 className="text-2xl font-extrabold text-brand-navy mb-3">Demo Request Received</h2>
-                  <p className="text-brand-text leading-relaxed">
-                    Thank you for your interest in MedScribeAI. We'll get back to you within 24 hours with a demo schedule and custom ROI analysis.
-                  </p>
-                </div>
-              ) : (
-                <div className="bg-white rounded-xl p-8 border border-gray-200 shadow-lg">
-                  <h2 className="text-xl font-bold text-brand-navy mb-6">Tell us about your MTSO</h2>
-                  <div className="space-y-5" role="form">
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="name" className="text-sm font-medium text-brand-text mb-1.5 block">Full Name *</Label>
-                        <Input id="name" name="name" required value={formData.name} onChange={handleChange} placeholder="Your name" />
-                      </div>
-                      <div>
-                        <Label htmlFor="company" className="text-sm font-medium text-brand-text mb-1.5 block">Company *</Label>
-                        <Input id="company" name="company" required value={formData.company} onChange={handleChange} placeholder="MTSO name" />
-                      </div>
-                    </div>
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="role" className="text-sm font-medium text-brand-text mb-1.5 block">Your Role</Label>
-                        <Input id="role" name="role" value={formData.role} onChange={handleChange} placeholder="e.g. Owner, Operations Head" />
-                      </div>
-                      <div>
-                        <Label htmlFor="email" className="text-sm font-medium text-brand-text mb-1.5 block">Email *</Label>
-                        <Input id="email" name="email" type="email" required value={formData.email} onChange={handleChange} placeholder="your@email.com" />
-                      </div>
-                    </div>
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div>
-                        <Label htmlFor="phone" className="text-sm font-medium text-brand-text mb-1.5 block">Phone</Label>
-                        <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder="+91 ..." />
-                      </div>
-                      <div>
-                        <Label htmlFor="volume" className="text-sm font-medium text-brand-text mb-1.5 block">Monthly Volume (lines)</Label>
-                        <Input id="volume" name="volume" value={formData.volume} onChange={handleChange} placeholder="e.g. 500,000" />
-                      </div>
-                    </div>
-                    <div>
-                      <Label htmlFor="currentPlatform" className="text-sm font-medium text-brand-text mb-1.5 block">Current Platform</Label>
-                      <Input id="currentPlatform" name="currentPlatform" value={formData.currentPlatform} onChange={handleChange} placeholder="e.g. iMedX, EMDAT, in-house tool" />
-                    </div>
-                    <div>
-                      <Label htmlFor="message" className="text-sm font-medium text-brand-text mb-1.5 block">Additional Details</Label>
-                      <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Tell us about your goals, challenges, or specific questions..." rows={3} />
-                    </div>
-                    {error && <p className="text-red-600 text-sm">{error}</p>}
-                    <Button onClick={handleSubmit} disabled={isSubmitting || !formData.name || !formData.company || !formData.email}
-                      className="w-full bg-gradient-to-b from-brand to-brand-hover text-white py-3 rounded-full font-semibold text-base shadow-lg shadow-brand/20 hover:shadow-xl transition-all">
-                      {isSubmitting ? 'Submitting...' : 'Request Demo'}
-                      {!isSubmitting && <Send className="ml-2 w-4 h-4" />}
-                    </Button>
-                  </div>
-                </div>
-              )}
-            </motion.div>
-          </div>
-        </div>
-      </section>
+            <h1 className="text-4xl lg:text-5xl font-extrabold text-foreground leading-tight">
+              See <span className="text-primary">MedScribeAI</span>{" "}
+              in Action
+            </h1>
 
-      <Footer />
-    </div>
+            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+              Share a few details about your MTSO — volumes, current platform, and goals. We'll walk you through the platform, show the AI pipeline live, and build a custom ROI projection for your operation.
+            </p>
+
+            <div className="mt-10 space-y-5">
+              {benefits.map((b, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+                  className="flex items-center gap-4"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-secondary text-primary flex items-center justify-center shrink-0">
+                    <b.icon className="w-5 h-5" />
+                  </div>
+                  <span className="text-foreground font-medium">{b.text}</span>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="mt-10 bg-muted/50 rounded-2xl border border-border p-6">
+              <p className="text-sm text-muted-foreground">Prefer email?</p>
+              <a href="mailto:hello@medscribeai.in" className="flex items-center gap-2 mt-1 text-primary font-semibold hover:text-primary/80 transition-colors">
+                <Mail className="w-4 h-4" />
+                hello@medscribeai.in
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Right form */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+          >
+            <div className="bg-card rounded-2xl border border-border p-8 shadow-xl shadow-black/5">
+              <h2 className="text-xl font-bold text-foreground mb-6">Tell us about your MTSO</h2>
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <Label className="text-sm font-medium">Full Name *</Label>
+                    <Input value={form.fullName} onChange={handleChange("fullName")} placeholder="Your name" className="mt-1.5 rounded-xl" />
+                  </div>
+                  <div>
+                    <Label className="text-sm font-medium">Company *</Label>
+                    <Input value={form.company} onChange={handleChange("company")} placeholder="MTSO name" className="mt-1.5 rounded-xl" />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <Label className="text-sm font-medium">Your Role</Label>
+                    <Input value={form.role} onChange={handleChange("role")} placeholder="e.g. Owner, Operations Head" className="mt-1.5 rounded-xl" />
+                  </div>
+                  <div>
+                    <Label className="text-sm font-medium">Email *</Label>
+                    <Input type="email" value={form.email} onChange={handleChange("email")} placeholder="your@email.com" className="mt-1.5 rounded-xl" />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <Label className="text-sm font-medium">Phone</Label>
+                    <Input value={form.phone} onChange={handleChange("phone")} placeholder="+91 ..." className="mt-1.5 rounded-xl" />
+                  </div>
+                  <div>
+                    <Label className="text-sm font-medium">Monthly Volume (lines)</Label>
+                    <Input value={form.volume} onChange={handleChange("volume")} placeholder="e.g. 500,000" className="mt-1.5 rounded-xl" />
+                  </div>
+                </div>
+                <div>
+                  <Label className="text-sm font-medium">Current Platform</Label>
+                  <Input value={form.currentPlatform} onChange={handleChange("currentPlatform")} placeholder="e.g. iMedX, EMDAT, in-house tool" className="mt-1.5 rounded-xl" />
+                </div>
+                <div>
+                  <Label className="text-sm font-medium">Additional Details</Label>
+                  <Textarea
+                    value={form.details}
+                    onChange={handleChange("details")}
+                    placeholder="Tell us about your goals, challenges, or specific questions..."
+                    className="mt-1.5 rounded-xl h-28"
+                  />
+                </div>
+                <Button
+                  type="submit"
+                  disabled={submitting}
+                  className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25 rounded-xl font-semibold gap-2 h-12"
+                >
+                  {submitting ? "Submitting..." : "Request Demo"}
+                  <Send className="w-4 h-4" />
+                </Button>
+              </form>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
   );
 }

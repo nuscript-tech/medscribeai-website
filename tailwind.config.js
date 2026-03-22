@@ -4,22 +4,15 @@ module.exports = {
     content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
   	extend: {
+  		fontFamily: {
+  			jakarta: ['var(--font-jakarta)']
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
-  			brand: {
-  				DEFAULT: '#2A6FF2',
-  				hover: '#2258D4',
-  				light: '#E8F1FF',
-  				navy: '#1B1F3B',
-  				mint: '#00C4A7',
-  				'mint-light': '#00C4A7',
-  				'cool-gray': '#F5F7FA',
-  				text: '#4A4A4A',
-  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
