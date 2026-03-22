@@ -8,13 +8,13 @@ const values = [
   { icon: Building2, title: "Deep MTSO Domain Expertise", desc: "MedScribeAI is built by a team that understands CDE workflows, QAS processes, TAT requirements, compensation structures, and client management from the inside. This isn't generic healthcare software." },
   { icon: Target, title: "Production-Proven", desc: "Every feature in MedScribeAI has been validated in a live production environment — processing real medical dictation at scale — before it ships to customers." },
   { icon: Lightbulb, title: "Purpose-Built for India", desc: "Designed for how Indian MTSOs actually operate — from CDE/QAS compensation models and shift patterns to leave policies and payroll structures used across the industry." },
-  { icon: Shield, title: "Your Partner, Not Your Competitor", desc: "MedScribeAI is a pure technology company. We sell software to MTSOs — we don't compete with them for transcription clients. Your business growth is our business growth." },
+  { icon: Shield, title: "Aligned With Your Success", desc: "MedScribeAI succeeds when our customers grow. Our pricing scales with your volume, our features are shaped by MTSO feedback, and every improvement we ship is designed to make your operation more profitable." },
 ];
 
 const milestones = [
-  { year: "2024", text: "NuScript Technologies founded in Coimbatore with a mission to modernize medical transcription technology for Indian MTSOs." },
-  { year: "2025", text: "MedScribeAI platform core developed. AI transcription pipeline, QA workflow, and HRMS modules built and validated in production environments." },
-  { year: "2026", text: "Platform proven at scale with 90+ daily active users. Preparing for multi-tenant SaaS launch to MTSOs across India." },
+  { year: "2000", text: "Our founder enters the HIM/RCM sector, laying the groundwork for two decades of expertise in global documentation standards." },
+  { year: "2000–2025", text: "25 years building health-tech ventures across the US and Indian markets — mastering the 'Truth of the Document' in clinical documentation and revenue cycle management." },
+  { year: "2026", text: "NuScript Technologies is born in Coimbatore. MedScribeAI platform built and proven at scale — bringing autonomous AI to Indian MTSOs." },
 ];
 
 export default function About() {
