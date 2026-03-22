@@ -7,8 +7,8 @@ import Navbar from '@/components/landing/Navbar';
 import Footer from '@/components/landing/Footer';
 
 const transcriptionFeatures = [
-  { icon: Mic, title: 'Deepgram Nova-3 Medical STT', desc: 'Industry-leading speech-to-text with medical vocabulary, dictation-style support, and 98%+ raw accuracy.' },
-  { icon: Brain, title: 'AI Formatting Engine', desc: 'Claude AI formats raw STT output into structured medical documents following provider styles, templates, and client specifications.' },
+  { icon: Mic, title: 'Medical-Grade Speech-to-Text', desc: 'Industry-leading speech-to-text with medical vocabulary, dictation-style support, and 98%+ raw accuracy.' },
+  { icon: Brain, title: 'AI Formatting Engine', desc: 'Advanced AI formats raw STT output into structured medical documents following provider styles, templates, and client specifications.' },
   { icon: Settings, title: 'Deterministic Post-Processor', desc: 'Rule-based corrections for ASR errors, medical abbreviations, and formatting standards — consistent and predictable.' },
   { icon: BookOpen, title: 'Self-Improving Learning Loop', desc: 'CDE corrections feed back into the system, improving future AI drafts for each provider over time.' },
   { icon: Layers, title: 'Template & Macro Management', desc: 'Full template system with DOCX extraction, macro libraries (900+ macros), and provider-specific samples with contextual search.' },
@@ -119,18 +119,6 @@ export default function Platform() {
       </div>
 
       {/* Tech Stack */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <span className="text-sm font-bold text-slate-500 uppercase tracking-wider">Technology</span>
-          <h2 className="text-2xl font-extrabold text-slate-900 mt-3 mb-8">Modern Cloud-Native Architecture</h2>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {['Next.js 15', 'Cloudflare Workers', 'PostgreSQL (Neon)', 'AWS S3', 'Clerk Auth', 'Serverless', 'Auto-Scaling', 'Multi-Tenant'].map((t, i) => (
-              <span key={i} className="px-4 py-2 bg-white rounded-full border border-slate-200 text-sm font-medium text-slate-700">{t}</span>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">

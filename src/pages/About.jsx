@@ -15,7 +15,7 @@ const values = [
 
 const milestones = [
   { year: '2024', text: 'NuScript Technologies founded in Coimbatore. Began building transcription operations and technology platform.' },
-  { year: '2025', text: 'MedScribeAI platform core developed. AI transcription pipeline with Deepgram + Claude AI integration operational. QA workflow and HRMS modules completed.' },
+  { year: '2025', text: 'MedScribeAI platform core developed. AI transcription pipeline operational. QA workflow and HRMS modules completed.' },
   { year: '2026', text: 'Platform in full production use. 90+ employees, 30+ clients processing daily. Preparing for SaaS launch to external MTSOs.' },
 ];
 

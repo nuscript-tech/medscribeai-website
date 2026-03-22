@@ -7,9 +7,9 @@ import Navbar from '@/components/landing/Navbar';
 import Footer from '@/components/landing/Footer';
 
 const steps = [
-  { icon: Upload, num: '01', title: 'Audio Upload', desc: 'Healthcare provider dictates. Audio file (MP3/WAV/M4A) is uploaded to MedScribeAI via secure pipeline. Files are encrypted at rest in AWS S3.', tag: 'Input' },
-  { icon: Mic, num: '02', title: 'Deepgram STT', desc: 'Deepgram Nova-3 Medical converts speech to text with 98%+ raw accuracy. Medical vocabulary, dictation commands, and speaker diarization handled natively.', tag: 'Speech-to-Text' },
-  { icon: Brain, num: '03', title: 'AI Formatting', desc: 'Claude AI formats the raw transcript into a structured medical document — applying provider templates, client specifications, Book of Style rules, and medico-legal requirements.', tag: 'AI Engine' },
+  { icon: Upload, num: '01', title: 'Audio Upload', desc: 'Healthcare provider dictates. Audio file (MP3/WAV/M4A) is uploaded to MedScribeAI via secure pipeline. Files are encrypted at rest on secure cloud storage.', tag: 'Input' },
+  { icon: Mic, num: '02', title: 'Speech-to-Text', desc: 'Medical-grade STT engine converts speech to text with 98%+ raw accuracy. Medical vocabulary, dictation commands, and speaker diarization handled natively.', tag: 'Speech-to-Text' },
+  { icon: Brain, num: '03', title: 'AI Formatting', desc: 'Our AI engine formats the raw transcript into a structured medical document — applying provider templates, client specifications, Book of Style rules, and medico-legal requirements.', tag: 'AI Engine' },
   { icon: Settings, num: '04', title: 'Post-Processor', desc: 'Deterministic rule engine applies ASR corrections, medical abbreviation expansion, formatting standards, and client-specific rules. Consistent, predictable, auditable.', tag: 'Rules Engine' },
   { icon: UserCheck, num: '05', title: 'CDE Review', desc: 'Clinical Documentation Editor reviews the AI draft, makes corrections, fills any blanks, and confirms accuracy. The AI did the heavy lifting — the human ensures perfection.', tag: 'Human Review' },
   { icon: Shield, num: '06', title: 'QA Review', desc: 'Quality Assurance Specialist audits the completed transcript against 13 error categories. Accuracy scores, error tracking, and rebuttal workflows ensure quality standards are met.', tag: 'Quality Assurance' },

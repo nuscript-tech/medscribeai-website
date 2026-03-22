@@ -21,7 +21,7 @@ const problems = [
 ];
 
 const solutions = [
-  { icon: Zap, title: 'AI Transcription Pipeline', desc: 'Deepgram Nova-3 Medical STT + AI formatting generates near-complete drafts. CDEs review and refine — doubling output to 1,000+ lines/day.' },
+  { icon: Zap, title: 'AI Transcription Pipeline', desc: 'Medical-grade speech-to-text + AI formatting generates near-complete drafts. CDEs review and refine — doubling output to 1,000+ lines/day.' },
   { icon: Shield, title: 'Complete QA Workflow', desc: '13 error categories, accuracy scoring, audit sampling, blank accountability, rebuttals — everything your QA team needs.' },
   { icon: Users, title: 'Full HRMS Built In', desc: 'Employee management, shift scheduling, attendance, leave, CDE/QAS compensation models, payroll — no separate system needed.' },
   { icon: BarChart3, title: 'Reporting & AI Insights', desc: 'Real-time dashboards, production analytics, quality metrics, and AI-powered operational insights across your entire MTSO.' },

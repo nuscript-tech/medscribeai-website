@@ -7,7 +7,7 @@ import Navbar from '@/components/landing/Navbar';
 import Footer from '@/components/landing/Footer';
 
 const comparisonRows = [
-  { feature: 'AI Engine', medscribe: 'Claude AI + Deepgram', imedx: 'Basic ASR', emdat: 'Dragon (legacy)' },
+  { feature: 'AI Engine', medscribe: 'Proprietary AI pipeline', imedx: 'Basic ASR', emdat: 'Dragon (legacy)' },
   { feature: 'QA Depth', medscribe: '13 categories + blanks', imedx: 'Basic tracking', emdat: 'Limited' },
   { feature: 'HRMS Included', medscribe: true, imedx: false, emdat: false },
   { feature: 'Workforce Impact', medscribe: '2x CDE productivity', imedx: 'None', emdat: 'None' },

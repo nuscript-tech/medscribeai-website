@@ -26,13 +26,13 @@ export default function PrivacyPolicy() {
             <p>We use collected information to provide and improve the MedScribeAI platform, process medical transcriptions using our AI pipeline, manage workforce and HR functions as configured by the MTSO, generate analytics and reporting, communicate service updates and support, and comply with legal obligations.</p>
 
             <h2 className="text-2xl mt-10 mb-4">4. Data Security</h2>
-            <p>We implement industry-standard security measures including encryption at rest and in transit (AES-256, TLS 1.3), role-based access controls, secure cloud infrastructure (Cloudflare Workers, AWS S3, Neon PostgreSQL), regular security assessments, and audit logging of all data access.</p>
+            <p>We implement industry-standard security measures including encryption at rest and in transit (AES-256, TLS 1.3), role-based access controls, secure cloud infrastructure, regular security assessments, and audit logging of all data access.</p>
 
             <h2 className="text-2xl mt-10 mb-4">5. Data Storage & Retention</h2>
             <p>Data is stored on secure cloud infrastructure. Medical audio files and transcription data are retained as per the MTSO's configuration and applicable regulations. HR and payroll data is retained for the duration of the service agreement plus any legally required retention period.</p>
 
             <h2 className="text-2xl mt-10 mb-4">6. Third-Party Services</h2>
-            <p>MedScribeAI uses the following third-party services for core functionality: Deepgram (speech-to-text processing), Anthropic Claude AI (document formatting), Cloudflare (hosting and CDN), AWS (file storage), Neon (database), and Clerk (authentication). Each provider maintains their own privacy policies and security certifications.</p>
+            <p>MedScribeAI uses third-party services for core functionality including speech-to-text processing, AI document formatting, cloud hosting, file storage, database management, and user authentication. Each provider maintains their own privacy policies and security certifications.</p>
 
             <h2 className="text-2xl mt-10 mb-4">7. Data Sharing</h2>
             <p>We do not sell, rent, or trade your personal information. We share data only with third-party service providers necessary to operate the platform (as listed above), when required by law, regulation, or legal process, and with your MTSO organization as configured by the account administrator.</p>
