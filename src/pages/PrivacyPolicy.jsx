@@ -9,10 +9,10 @@ export default function PrivacyPolicy() {
 
       <section className="pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-4xl font-extrabold text-slate-900 mb-2">Privacy Policy</h1>
-          <p className="text-slate-500 mb-10">Last updated: March 2026</p>
+          <h1 className="text-4xl font-extrabold text-brand-navy mb-2">Privacy Policy</h1>
+          <p className="text-brand-text/80 mb-10">Last updated: March 2026</p>
 
-          <div className="prose prose-slate max-w-none prose-headings:font-bold prose-headings:text-slate-900 prose-p:text-slate-600 prose-p:leading-relaxed prose-li:text-slate-600">
+          <div className="prose prose-slate max-w-none prose-headings:font-bold prose-headings:text-brand-navy prose-p:text-brand-text prose-p:leading-relaxed prose-li:text-brand-text">
             <h2 className="text-2xl mt-10 mb-4">1. Introduction</h2>
             <p>NuScript Technologies Pvt Ltd ("NuScript", "we", "us", or "our") operates the MedScribeAI platform (medscribeai.in and app.medscribeai.in). This Privacy Policy describes how we collect, use, store, and protect information when you use our services.</p>
 
@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
             <p>
               <strong>NuScript Technologies Pvt Ltd</strong><br/>
               Coimbatore, Tamil Nadu, India<br/>
-              Email: <a href="mailto:hello@medscribeai.in" className="text-blue-600 hover:underline">hello@medscribeai.in</a>
+              Email: <a href="mailto:hello@medscribeai.in" className="text-brand hover:underline">hello@medscribeai.in</a>
             </p>
           </div>
         </div>

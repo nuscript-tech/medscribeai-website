@@ -20,15 +20,15 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             <Link to="/" className="flex items-center gap-2.5">
-              <div className="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center">
+              <div className="w-9 h-9 bg-brand rounded-lg flex items-center justify-center">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 2L2 7l10 5 10-5-10-5z" fill="white" opacity="0.9"/>
                   <path d="M2 17l10 5 10-5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M2 12l10 5 10-5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <span className="text-xl font-bold text-slate-900">
-                MedScribe<span className="text-blue-600">AI</span>
+              <span className="text-xl font-bold text-brand-navy">
+                MedScribe<span className="text-brand">AI</span>
               </span>
             </Link>
 
@@ -37,18 +37,18 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className="text-[15px] font-medium text-slate-600 hover:text-slate-900 whitespace-nowrap transition-colors"
+                  className="text-[15px] font-medium text-brand-text hover:text-brand-navy whitespace-nowrap transition-colors"
                 >
                   {link.name}
                 </Link>
               ))}
               <a href="https://app.medscribeai.in" className="flex-shrink-0">
-                <Button variant="outline" className="text-slate-900 border-slate-300 px-5 rounded-lg">
+                <Button variant="outline" className="text-brand-navy border-gray-300 px-5 rounded-lg">
                   Login
                 </Button>
               </a>
               <Link to="/RequestDemo" className="flex-shrink-0">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-5 rounded-lg shadow-lg shadow-blue-600/20">
+                <Button className="bg-brand hover:bg-brand-hover text-white px-5 rounded-lg shadow-lg shadow-brand/20">
                   Request Demo
                   <ArrowRight className="ml-1.5 w-4 h-4" />
                 </Button>
@@ -57,12 +57,12 @@ export default function Navbar() {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg hover:bg-gray-100"
+              className="lg:hidden p-2 rounded-lg hover:bg-brand-cool-gray"
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6 text-slate-900" />
+                <X className="w-6 h-6 text-brand-navy" />
               ) : (
-                <Menu className="w-6 h-6 text-slate-900" />
+                <Menu className="w-6 h-6 text-brand-navy" />
               )}
             </button>
           </div>
@@ -78,19 +78,19 @@ export default function Navbar() {
                   key={link.name}
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-lg text-slate-600 hover:text-slate-900 font-medium py-2"
+                  className="block text-lg text-brand-text hover:text-brand-navy font-medium py-2"
                 >
                   {link.name}
                 </Link>
               ))}
               <div className="pt-4 space-y-3">
                 <a href="https://app.medscribeai.in" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button variant="outline" className="w-full text-slate-900 border-slate-300 rounded-lg">
+                  <Button variant="outline" className="w-full text-brand-navy border-gray-300 rounded-lg">
                     Login
                   </Button>
                 </a>
                 <Link to="/RequestDemo" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg mt-3">
+                  <Button className="w-full bg-brand hover:bg-brand-hover text-white rounded-lg mt-3">
                     Request Demo
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>

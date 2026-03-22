@@ -34,19 +34,19 @@ const Section = ({ tag, tagColor, title, desc, features, children }) => (
     <div className="max-w-7xl mx-auto px-6">
       <div className="max-w-3xl mb-12">
         <span className={`text-sm font-bold uppercase tracking-wider ${tagColor}`}>{tag}</span>
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-4">{title}</h2>
-        <p className="text-lg text-slate-600 leading-relaxed">{desc}</p>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3 mb-4">{title}</h2>
+        <p className="text-lg text-brand-text leading-relaxed">{desc}</p>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((f, i) => (
           <motion.div key={i} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ delay: i * 0.05 }}
-            className="bg-white rounded-xl p-6 border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all">
-            <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mb-4">
-              <f.icon className="w-5 h-5 text-blue-600" />
+            className="bg-white rounded-xl p-6 border border-gray-200 hover:border-brand/20 hover:shadow-md transition-all">
+            <div className="w-10 h-10 bg-brand-light rounded-lg flex items-center justify-center mb-4">
+              <f.icon className="w-5 h-5 text-brand" />
             </div>
-            <h3 className="text-lg font-bold text-slate-900 mb-2">{f.title}</h3>
-            <p className="text-slate-600 text-[15px] leading-relaxed">{f.desc}</p>
+            <h3 className="text-lg font-bold text-brand-navy mb-2">{f.title}</h3>
+            <p className="text-brand-text text-[15px] leading-relaxed">{f.desc}</p>
           </motion.div>
         ))}
       </div>
@@ -63,17 +63,17 @@ export default function Platform() {
       {/* Hero */}
       <section className="relative pt-32 pb-16 bg-white overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
-          <div className="absolute top-0 left-0 right-0 h-full bg-[radial-gradient(circle_at_30%_20%,rgba(37,99,235,0.06),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(42,111,242,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(42,111,242,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+          <div className="absolute top-0 left-0 right-0 h-full bg-[radial-gradient(circle_at_30%_20%,rgba(42,111,242,0.06),transparent_50%)]" />
         </div>
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <span className="text-sm font-bold text-blue-600 uppercase tracking-wider">Platform Overview</span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 mt-4 mb-6 leading-[1.1]">
+            <span className="text-sm font-bold text-brand uppercase tracking-wider">Platform Overview</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-navy mt-4 mb-6 leading-[1.1]">
               Two Products in One.<br/>
-              <span className="text-blue-600">One Price.</span>
+              <span className="text-brand">One Price.</span>
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">
+            <p className="text-xl text-brand-text leading-relaxed max-w-3xl">
               MedScribeAI replaces both your legacy transcription platform (iMedX, EMDAT) and your standalone HRMS (GreytHR, Zoho People) with a single modern cloud SaaS — and adds AI capabilities that neither legacy product can match.
             </p>
           </motion.div>
@@ -81,39 +81,39 @@ export default function Platform() {
       </section>
 
       {/* Replaces Table */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-brand-cool-gray">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="bg-white rounded-xl p-8 border border-slate-200">
+            <div className="bg-white rounded-xl p-8 border border-gray-200">
               <div className="text-sm font-bold text-red-600 uppercase tracking-wider mb-3">Replaces</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Legacy Transcription Platform</h3>
-              <p className="text-slate-500 mb-4">iMedX, EMDAT/3M Solventum</p>
-              <p className="text-slate-600 leading-relaxed">AI transcription, template & macro management, provider samples, complete QA workflow, VBC line counting, delivery management, and reporting with AI insights.</p>
+              <h3 className="text-xl font-bold text-brand-navy mb-2">Legacy Transcription Platform</h3>
+              <p className="text-brand-text/80 mb-4">iMedX, EMDAT/3M Solventum</p>
+              <p className="text-brand-text leading-relaxed">AI transcription, template & macro management, provider samples, complete QA workflow, VBC line counting, delivery management, and reporting with AI insights.</p>
             </div>
-            <div className="bg-white rounded-xl p-8 border border-slate-200">
+            <div className="bg-white rounded-xl p-8 border border-gray-200">
               <div className="text-sm font-bold text-red-600 uppercase tracking-wider mb-3">Replaces</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Standalone HRMS</h3>
-              <p className="text-slate-500 mb-4">GreytHR, Zoho People, Keka</p>
-              <p className="text-slate-600 leading-relaxed">Employee management with role-based access, shift scheduling, attendance tracking, leave management, CDE & QAS compensation models, and payroll calculations.</p>
+              <h3 className="text-xl font-bold text-brand-navy mb-2">Standalone HRMS</h3>
+              <p className="text-brand-text/80 mb-4">GreytHR, Zoho People, Keka</p>
+              <p className="text-brand-text leading-relaxed">Employee management with role-based access, shift scheduling, attendance tracking, leave management, CDE & QAS compensation models, and payroll calculations.</p>
             </div>
           </div>
         </div>
       </section>
 
       <div className="bg-white">
-        <Section tag="AI Transcription" tagColor="text-blue-600" title="AI-Powered Transcription Pipeline"
+        <Section tag="AI Transcription" tagColor="text-brand" title="AI-Powered Transcription Pipeline"
           desc="From raw audio to formatted medical document in seconds. Our multi-stage pipeline combines the best medical STT with AI formatting and deterministic post-processing for consistent, high-quality output."
           features={transcriptionFeatures} />
       </div>
 
-      <div className="bg-slate-50">
-        <Section tag="Quality Assurance" tagColor="text-purple-600" title="Enterprise-Grade QA Workflow"
+      <div className="bg-brand-cool-gray">
+        <Section tag="Quality Assurance" tagColor="text-brand" title="Enterprise-Grade QA Workflow"
           desc="The most comprehensive QA system built for medical transcription — 13 error categories, accuracy scoring, audit sampling, and full accountability tracking."
           features={qaFeatures} />
       </div>
 
       <div className="bg-white">
-        <Section tag="Workforce Management" tagColor="text-emerald-600" title="Complete HRMS — Built In, Not Bolted On"
+        <Section tag="Workforce Management" tagColor="text-brand-mint" title="Complete HRMS — Built In, Not Bolted On"
           desc="No more paying for a separate HRMS. MedScribeAI includes everything you need to manage your MTSO workforce, deeply integrated with your production data."
           features={hrmsFeatures} />
       </div>
@@ -122,10 +122,10 @@ export default function Platform() {
       {/* CTA */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-extrabold text-slate-900 mb-4">See the Platform in Action</h2>
-          <p className="text-lg text-slate-600 mb-8">Schedule a private demo and see how MedScribeAI can transform your MTSO operations.</p>
+          <h2 className="text-3xl font-extrabold text-brand-navy mb-4">See the Platform in Action</h2>
+          <p className="text-lg text-brand-text mb-8">Schedule a private demo and see how MedScribeAI can transform your MTSO operations.</p>
           <Link to="/RequestDemo">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-6 text-lg rounded-lg font-semibold">
+            <Button size="lg" className="bg-brand hover:bg-brand-hover text-white px-10 py-6 text-lg rounded-lg font-semibold">
               Request a Demo <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

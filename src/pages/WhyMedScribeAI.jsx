@@ -61,7 +61,7 @@ const comparisons = [
 ];
 
 const CellValue = ({ val }) => {
-  if (val === true) return <Check className="w-5 h-5 text-emerald-600 mx-auto" />;
+  if (val === true) return <Check className="w-5 h-5 text-brand-mint mx-auto" />;
   if (val === false) return <X className="w-5 h-5 text-red-400 mx-auto" />;
   return <span>{val}</span>;
 };
@@ -73,15 +73,15 @@ export default function WhyMedScribeAI() {
 
       <section className="relative pt-32 pb-16 bg-white overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(42,111,242,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(42,111,242,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
         </div>
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <span className="text-sm font-bold text-blue-600 uppercase tracking-wider">Why MedScribeAI</span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 mt-4 mb-6 leading-[1.1]">
-              How We Compare to<br/><span className="text-blue-600">Legacy Platforms</span>
+            <span className="text-sm font-bold text-brand uppercase tracking-wider">Why MedScribeAI</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-navy mt-4 mb-6 leading-[1.1]">
+              How We Compare to<br/><span className="text-brand">Legacy Platforms</span>
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">
+            <p className="text-xl text-brand-text leading-relaxed max-w-3xl">
               MedScribeAI costs less per line than a legacy platform that offers no AI and no HRMS. MTSOs currently pay separately for a transcription platform and an HRMS — MedScribeAI replaces both at a lower combined price.
             </p>
           </motion.div>
@@ -89,26 +89,26 @@ export default function WhyMedScribeAI() {
       </section>
 
       {/* Feature Comparison Table */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-cool-gray">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-extrabold text-slate-900 mb-8">Feature Comparison</h2>
-          <div className="bg-white rounded-xl border border-slate-200 overflow-x-auto shadow-sm">
+          <h2 className="text-2xl font-extrabold text-brand-navy mb-8">Feature Comparison</h2>
+          <div className="bg-white rounded-xl border border-gray-200 overflow-x-auto shadow-sm">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-slate-100 border-b border-slate-200">
-                  <th className="px-6 py-4 text-left font-bold text-slate-700">Feature</th>
-                  <th className="px-6 py-4 text-center font-bold text-blue-600 bg-blue-50/50">MedScribeAI</th>
-                  <th className="px-6 py-4 text-center font-bold text-slate-500">iMedX</th>
-                  <th className="px-6 py-4 text-center font-bold text-slate-500">EMDAT / 3M</th>
+                <tr className="bg-brand-cool-gray border-b border-gray-200">
+                  <th className="px-6 py-4 text-left font-bold text-brand-text">Feature</th>
+                  <th className="px-6 py-4 text-center font-bold text-brand bg-brand-light/50">MedScribeAI</th>
+                  <th className="px-6 py-4 text-center font-bold text-brand-text/80">iMedX</th>
+                  <th className="px-6 py-4 text-center font-bold text-brand-text/80">EMDAT / 3M</th>
                 </tr>
               </thead>
               <tbody>
                 {comparisonRows.map((row, i) => (
-                  <tr key={i} className="border-b border-slate-100 last:border-0">
-                    <td className="px-6 py-3.5 text-slate-700 font-medium">{row.feature}</td>
-                    <td className="px-6 py-3.5 text-center text-slate-900 font-medium bg-blue-50/20"><CellValue val={row.medscribe} /></td>
-                    <td className="px-6 py-3.5 text-center text-slate-500"><CellValue val={row.imedx} /></td>
-                    <td className="px-6 py-3.5 text-center text-slate-500"><CellValue val={row.emdat} /></td>
+                  <tr key={i} className="border-b border-gray-100 last:border-0">
+                    <td className="px-6 py-3.5 text-brand-text font-medium">{row.feature}</td>
+                    <td className="px-6 py-3.5 text-center text-brand-navy font-medium bg-brand-light/20"><CellValue val={row.medscribe} /></td>
+                    <td className="px-6 py-3.5 text-center text-brand-text/80"><CellValue val={row.imedx} /></td>
+                    <td className="px-6 py-3.5 text-center text-brand-text/80"><CellValue val={row.emdat} /></td>
                   </tr>
                 ))}
               </tbody>
@@ -120,21 +120,21 @@ export default function WhyMedScribeAI() {
       {/* Pricing Comparison */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl font-extrabold text-slate-900 mb-2">Pricing vs Legacy Platforms</h2>
-          <p className="text-slate-600 mb-8">Effective cost per line — MedScribeAI includes AI, QA, and HRMS.</p>
-          <div className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
-            <div className="grid grid-cols-4 bg-slate-100 border-b border-slate-200">
-              <div className="px-6 py-4 font-bold text-slate-700 text-sm">Volume/Month</div>
+          <h2 className="text-2xl font-extrabold text-brand-navy mb-2">Pricing vs Legacy Platforms</h2>
+          <p className="text-brand-text mb-8">Effective cost per line — MedScribeAI includes AI, QA, and HRMS.</p>
+          <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+            <div className="grid grid-cols-4 bg-brand-cool-gray border-b border-gray-200">
+              <div className="px-6 py-4 font-bold text-brand-text text-sm">Volume/Month</div>
               <div className="px-6 py-4 font-bold text-red-600 text-sm text-center">Legacy ($/line)</div>
-              <div className="px-6 py-4 font-bold text-emerald-600 text-sm text-center">MedScribeAI ($/line)</div>
-              <div className="px-6 py-4 font-bold text-blue-600 text-sm text-center">Includes</div>
+              <div className="px-6 py-4 font-bold text-brand-mint text-sm text-center">MedScribeAI ($/line)</div>
+              <div className="px-6 py-4 font-bold text-brand text-sm text-center">Includes</div>
             </div>
             {pricingRows.map((row, i) => (
-              <div key={i} className="grid grid-cols-4 border-b border-slate-100 last:border-0">
-                <div className="px-6 py-4 text-slate-700 font-medium text-sm">{row.volume}</div>
+              <div key={i} className="grid grid-cols-4 border-b border-gray-100 last:border-0">
+                <div className="px-6 py-4 text-brand-text font-medium text-sm">{row.volume}</div>
                 <div className="px-6 py-4 text-center text-red-600 text-sm">{row.legacy}</div>
-                <div className="px-6 py-4 text-center text-emerald-600 font-semibold text-sm">{row.medscribe}</div>
-                <div className="px-6 py-4 text-center text-blue-600 font-medium text-sm">{row.includes}</div>
+                <div className="px-6 py-4 text-center text-brand-mint font-semibold text-sm">{row.medscribe}</div>
+                <div className="px-6 py-4 text-center text-brand font-medium text-sm">{row.includes}</div>
               </div>
             ))}
           </div>
@@ -142,21 +142,21 @@ export default function WhyMedScribeAI() {
       </section>
 
       {/* Detailed Comparisons */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-brand-cool-gray">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl font-extrabold text-slate-900 mb-10">Detailed Comparisons</h2>
+          <h2 className="text-2xl font-extrabold text-brand-navy mb-10">Detailed Comparisons</h2>
           <div className="space-y-6">
             {comparisons.map((c, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="bg-white rounded-xl p-8 border border-slate-200">
-                <h3 className="text-xl font-bold text-slate-900 mb-1">{c.name}</h3>
-                <p className="text-slate-500 font-medium mb-5">{c.tagline}</p>
+                className="bg-white rounded-xl p-8 border border-gray-200">
+                <h3 className="text-xl font-bold text-brand-navy mb-1">{c.name}</h3>
+                <p className="text-brand-text/80 font-medium mb-5">{c.tagline}</p>
                 <ul className="space-y-3">
                   {c.points.map((p, j) => (
                     <li key={j} className="flex items-start gap-3">
                       <X className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-600">{p}</span>
+                      <span className="text-brand-text">{p}</span>
                     </li>
                   ))}
                 </ul>
@@ -169,10 +169,10 @@ export default function WhyMedScribeAI() {
       {/* CTA */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Ready to Move Beyond Legacy?</h2>
-          <p className="text-lg text-slate-600 mb-8">See how MedScribeAI compares with your specific setup. We'll walk through the numbers for your MTSO.</p>
+          <h2 className="text-3xl font-extrabold text-brand-navy mb-4">Ready to Move Beyond Legacy?</h2>
+          <p className="text-lg text-brand-text mb-8">See how MedScribeAI compares with your specific setup. We'll walk through the numbers for your MTSO.</p>
           <Link to="/RequestDemo">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-6 text-lg rounded-lg font-semibold">
+            <Button size="lg" className="bg-brand hover:bg-brand-hover text-white px-10 py-6 text-lg rounded-lg font-semibold">
               Request a Demo <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

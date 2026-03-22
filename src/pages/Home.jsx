@@ -7,9 +7,9 @@ import Navbar from '@/components/landing/Navbar';
 import Footer from '@/components/landing/Footer';
 
 const metrics = [
-  { value: '50%', label: 'Cost Reduction', icon: TrendingDown, color: 'text-emerald-600', bg: 'bg-emerald-50' },
-  { value: '2x', label: 'CDE Productivity', icon: Zap, color: 'text-blue-600', bg: 'bg-blue-50' },
-  { value: '98-99%', label: 'Accuracy Rate', icon: Target, color: 'text-purple-600', bg: 'bg-purple-50' },
+  { value: '50%', label: 'Cost Reduction', icon: TrendingDown, color: 'text-brand-mint', bg: 'bg-brand-mint/5' },
+  { value: '2x', label: 'CDE Productivity', icon: Zap, color: 'text-brand', bg: 'bg-brand-light' },
+  { value: '98-99%', label: 'Accuracy Rate', icon: Target, color: 'text-brand', bg: 'bg-brand-light' },
   { value: '<12hr', label: 'Turnaround Time', icon: Clock, color: 'text-amber-600', bg: 'bg-amber-50' },
 ];
 
@@ -35,13 +35,13 @@ export default function Home() {
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-white pt-32 pb-20">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(37,99,235,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(37,99,235,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
-          <div className="absolute top-0 left-0 right-0 h-full bg-[radial-gradient(circle_at_25%_20%,rgba(37,99,235,0.06),transparent_50%),radial-gradient(circle_at_75%_60%,rgba(16,185,129,0.05),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(42,111,242,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(42,111,242,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+          <div className="absolute top-0 left-0 right-0 h-full bg-[radial-gradient(circle_at_25%_20%,rgba(42,111,242,0.06),transparent_50%),radial-gradient(circle_at_75%_60%,rgba(0,196,167,0.05),transparent_50%)]" />
           {[...Array(6)].map((_, i) => (
             <div key={i} className={`absolute w-2 h-2 rounded-full animate-pulse`}
               style={{
                 top: `${20 + (i * 13) % 60}%`, left: `${15 + (i * 17) % 70}%`,
-                backgroundColor: i % 2 ? 'rgba(37,99,235,0.15)' : 'rgba(16,185,129,0.15)',
+                backgroundColor: i % 2 ? 'rgba(42,111,242,0.15)' : 'rgba(0,196,167,0.15)',
                 animationDelay: `${i * 0.5}s`, animationDuration: `${3 + i * 0.5}s`
               }}
             />
@@ -51,37 +51,37 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-8">
-              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-              <span className="text-sm font-semibold text-blue-700">Production-tested with 90+ employees & 30 clients</span>
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-light border border-brand-light mb-8">
+              <div className="w-2 h-2 rounded-full bg-brand-mint animate-pulse" />
+              <span className="text-sm font-semibold text-brand">Production-tested with 90+ employees & 30 clients</span>
             </motion.div>
 
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-slate-900 leading-[1.08] mb-8">
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-brand-navy leading-[1.08] mb-8">
               Cut Your MTSO Operating Costs by{' '}
-              <span className="text-blue-600">50%</span>
+              <span className="text-brand">50%</span>
             </motion.h1>
 
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-xl sm:text-2xl text-slate-600 mb-6 font-medium leading-relaxed">
+              className="text-xl sm:text-2xl text-brand-text mb-6 font-medium leading-relaxed">
               AI-powered medical transcription + QA + workforce management — all in one platform built for Indian MTSOs.
             </motion.p>
 
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.15 }}
-              className="text-lg text-slate-500 mb-10 leading-relaxed max-w-3xl">
+              className="text-lg text-brand-text/80 mb-10 leading-relaxed max-w-3xl">
               MedScribeAI replaces your legacy transcription platform and standalone HRMS with a single modern SaaS product. Our AI pipeline doubles CDE productivity from 500 to 1,000+ lines per shift, while built-in workforce management eliminates the need for separate HR tools.
             </motion.p>
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
               className="flex flex-col sm:flex-row items-start gap-4 mb-14">
               <Link to="/RequestDemo">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-lg font-semibold shadow-xl shadow-blue-600/20">
+                <Button size="lg" className="bg-brand hover:bg-brand-hover text-white px-8 py-6 text-lg rounded-lg font-semibold shadow-xl shadow-brand/20">
                   Request a Demo
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
               <Link to="/ForMTSOs">
-                <Button variant="outline" size="lg" className="px-8 py-6 text-lg rounded-lg border-2 border-slate-300 hover:border-slate-400 hover:bg-slate-50 font-semibold">
+                <Button variant="outline" size="lg" className="px-8 py-6 text-lg rounded-lg border-2 border-gray-300 hover:border-gray-400 hover:bg-brand-light font-semibold">
                   See the ROI Math
                 </Button>
               </Link>
@@ -95,7 +95,7 @@ export default function Home() {
                     <m.icon className={`w-5 h-5 ${m.color}`} />
                   </div>
                   <div className={`text-2xl sm:text-3xl font-extrabold ${m.color}`}>{m.value}</div>
-                  <div className="text-sm text-slate-500 font-medium mt-1">{m.label}</div>
+                  <div className="text-sm text-brand-text/80 font-medium mt-1">{m.label}</div>
                 </div>
               ))}
             </motion.div>
@@ -104,14 +104,14 @@ export default function Home() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-brand-cool-gray">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-14">
             <span className="text-sm font-bold text-red-600 uppercase tracking-wider">The Problem</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-5">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3 mb-5">
               Indian MTSOs Are Running on 15-Year-Old Technology
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg text-brand-text leading-relaxed">
               Most MTSOs cobble together legacy transcription platforms with separate HRMS tools, manual processes, and zero AI. The result? High costs, low productivity, and no path to modernization.
             </p>
           </div>
@@ -119,12 +119,12 @@ export default function Home() {
             {problems.map((p, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="bg-white rounded-xl p-6 border border-slate-200 hover:border-slate-300 hover:shadow-md transition-all">
+                className="bg-white rounded-xl p-6 border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all">
                 <div className="w-8 h-8 bg-red-50 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-red-500 font-bold text-sm">{String(i + 1).padStart(2, '0')}</span>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">{p.title}</h3>
-                <p className="text-slate-600 text-[15px] leading-relaxed">{p.desc}</p>
+                <h3 className="text-lg font-bold text-brand-navy mb-2">{p.title}</h3>
+                <p className="text-brand-text text-[15px] leading-relaxed">{p.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -135,11 +135,11 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-14">
-            <span className="text-sm font-bold text-blue-600 uppercase tracking-wider">The Solution</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 mb-5">
+            <span className="text-sm font-bold text-brand uppercase tracking-wider">The Solution</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3 mb-5">
               One Platform. Everything Your MTSO Needs.
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg text-brand-text leading-relaxed">
               MedScribeAI combines AI-powered transcription, a complete QA workflow, and full HRMS capabilities into a single cloud-native SaaS platform — purpose-built for how Indian MTSOs operate.
             </p>
           </div>
@@ -147,12 +147,12 @@ export default function Home() {
             {solutions.map((s, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }} transition={{ delay: i * 0.1 }}
-                className="bg-slate-50 rounded-xl p-8 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/30 transition-all group">
-                <div className="w-12 h-12 bg-blue-100 group-hover:bg-blue-200 rounded-xl flex items-center justify-center mb-5 transition-colors">
-                  <s.icon className="w-6 h-6 text-blue-600" />
+                className="bg-brand-cool-gray rounded-xl p-8 border border-gray-100 hover:border-brand/20 hover:bg-brand-light/30 transition-all group">
+                <div className="w-12 h-12 bg-brand-light group-hover:bg-brand/20 rounded-xl flex items-center justify-center mb-5 transition-colors">
+                  <s.icon className="w-6 h-6 text-brand" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{s.title}</h3>
-                <p className="text-slate-600 leading-relaxed">{s.desc}</p>
+                <h3 className="text-xl font-bold text-brand-navy mb-3">{s.title}</h3>
+                <p className="text-brand-text leading-relaxed">{s.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -160,13 +160,13 @@ export default function Home() {
       </section>
 
       {/* Social Proof / Production Stats */}
-      <section className="py-20 bg-blue-600">
+      <section className="py-20 bg-brand">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
               Not a Prototype. A Production Platform.
             </h2>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+            <p className="text-xl text-brand-light max-w-2xl mx-auto">
               MedScribeAI is in active daily use at NuScript — processing real medical dictation for real healthcare practice clients, every single day.
             </p>
           </div>
@@ -178,7 +178,7 @@ export default function Home() {
             ].map((s, i) => (
               <div key={i} className="text-center">
                 <div className="text-4xl sm:text-5xl font-extrabold text-white mb-2">{s.value}</div>
-                <div className="text-blue-200 font-medium">{s.label}</div>
+                <div className="text-brand-light/80 font-medium">{s.label}</div>
               </div>
             ))}
           </div>
@@ -188,21 +188,21 @@ export default function Home() {
       {/* CTA */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-5">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy mb-5">
             Ready to Transform Your MTSO Operations?
           </h2>
-          <p className="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg text-brand-text mb-10 max-w-2xl mx-auto">
             Join the pilot program — 1 month free, 1 month at 50% off. See the productivity gains and cost savings firsthand before committing.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/RequestDemo">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-6 text-lg rounded-lg font-semibold shadow-xl shadow-blue-600/20">
+              <Button size="lg" className="bg-brand hover:bg-brand-hover text-white px-10 py-6 text-lg rounded-lg font-semibold shadow-xl shadow-brand/20">
                 Request a Demo
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
             <Link to="/Pricing">
-              <Button variant="outline" size="lg" className="px-10 py-6 text-lg rounded-lg border-2 border-slate-300 font-semibold">
+              <Button variant="outline" size="lg" className="px-10 py-6 text-lg rounded-lg border-2 border-gray-300 font-semibold">
                 See Pricing
                 <ChevronRight className="ml-1 w-5 h-5" />
               </Button>
