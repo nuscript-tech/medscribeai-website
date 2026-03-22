@@ -32,9 +32,9 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">
                 MedScribe<span className="text-primary">AI</span>
               </span>
-              <span className="text-sm text-white/40 ml-2 hidden sm:inline">AI Medical Transcription Platform</span>
+              <span className="text-sm text-white/60 ml-2 hidden sm:inline">AI Medical Transcription Platform</span>
             </div>
-            <p className="text-sm leading-relaxed max-w-md text-white/50">
+            <p className="text-sm leading-relaxed max-w-md text-white/60">
               The modern SaaS platform for Indian MTSOs — replacing legacy transcription platforms and standalone HRMS with AI-powered transcription, QA workflows, and workforce management in a single product.
             </p>
             <a href="mailto:hello@medscribeai.in" className="inline-flex items-center gap-2 mt-4 text-sm hover:opacity-80 transition-colors" style={{color: "#00C4A7"}}>
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider mb-4" style={{color: "#E8F1FF", opacity: 0.5}}>Platform</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider mb-4" style={{color: "#E8F1FF", opacity: 0.7}}>Platform</h4>
             <ul className="space-y-3">
               {platformLinks.map((link) => (
                 <li key={link.path}>
@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-semibold uppercase tracking-wider mb-4" style={{color: "#E8F1FF", opacity: 0.5}}>Company</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-wider mb-4" style={{color: "#E8F1FF", opacity: 0.7}}>Company</h4>
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.path}>
@@ -67,12 +67,12 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/30">© 2026 MedScribeAI, a product of <a href="https://nuscript.in" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 underline underline-offset-2 transition-colors">NuScript Technologies</a>. All rights reserved.</p>
+          <p className="text-xs text-white/50">© 2026 MedScribeAI, a product of <a href="https://nuscript.in" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 underline underline-offset-2 transition-colors">NuScript Technologies</a>. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">
+            <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-white/20 text-white/60">
               🔒 ISO 27001 Aligned
             </span>
-            <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">
+            <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-white/20 text-white/60">
               🏥 HIPAA Compliant
             </span>
           </div>
