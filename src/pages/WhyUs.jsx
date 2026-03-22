@@ -29,7 +29,7 @@ const reasons = [
   {
     icon: Rocket,
     title: "Production-Tested",
-    desc: "Not a prototype or MVP. MedScribeAI is in active daily production at NuScript with 90+ employees and 30+ healthcare practice clients.",
+    desc: "Not a prototype or MVP. MedScribeAI is in active daily production with 90+ users processing real dictation for 30+ healthcare practices.",
   },
   {
     icon: Shield,

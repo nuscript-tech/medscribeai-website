@@ -1,20 +1,20 @@
 import React from "react";
-import { Building2, Target, Users, MapPin, Lightbulb } from "lucide-react";
+import { Building2, Target, Users, MapPin, Lightbulb, Shield } from "lucide-react";
 import AnimatedSection from "../components/shared/AnimatedSection";
 import SectionLabel from "../components/shared/SectionLabel";
 import CTASection from "../components/shared/CTASection";
 
 const values = [
-  { icon: Building2, title: "Built by an MTSO, for MTSOs", desc: "We run our own transcription operation with 90+ employees and 30 clients. MedScribeAI was built to solve our own challenges — then productized for the industry." },
-  { icon: Target, title: "Production-First", desc: "This is not a lab experiment. MedScribeAI processes real medical dictation for real healthcare providers every single day. Features are validated in production before they reach you." },
-  { icon: Lightbulb, title: "India-Focused", desc: "Built specifically for how Indian MTSOs operate — from compensation structures and shift patterns to compliance requirements and payment models." },
-  { icon: Users, title: "MTSO Operations DNA", desc: "Our team understands CDE workflows, QAS processes, TAT requirements, and client management because we live it daily. This isn't generic healthcare software." },
+  { icon: Building2, title: "Deep MTSO Domain Expertise", desc: "MedScribeAI is built by a team that understands CDE workflows, QAS processes, TAT requirements, compensation structures, and client management from the inside. This isn't generic healthcare software." },
+  { icon: Target, title: "Production-Proven", desc: "Every feature in MedScribeAI has been validated in a live production environment — processing real medical dictation at scale — before it ships to customers." },
+  { icon: Lightbulb, title: "Purpose-Built for India", desc: "Designed for how Indian MTSOs actually operate — from CDE/QAS compensation models and shift patterns to leave policies and payroll structures used across the industry." },
+  { icon: Shield, title: "Your Partner, Not Your Competitor", desc: "MedScribeAI is a pure technology company. We sell software to MTSOs — we don't compete with them for transcription clients. Your business growth is our business growth." },
 ];
 
 const milestones = [
-  { year: "2024", text: "NuScript Technologies founded in Coimbatore. Began building transcription operations and technology platform." },
-  { year: "2025", text: "MedScribeAI platform core developed. AI transcription pipeline operational. QA workflow and HRMS modules completed." },
-  { year: "2026", text: "Platform in full production use. 90+ employees, 30+ clients processing daily. Preparing for SaaS launch to external MTSOs." },
+  { year: "2024", text: "NuScript Technologies founded in Coimbatore with a mission to modernize medical transcription technology for Indian MTSOs." },
+  { year: "2025", text: "MedScribeAI platform core developed. AI transcription pipeline, QA workflow, and HRMS modules built and validated in production environments." },
+  { year: "2026", text: "Platform proven at scale with 90+ daily active users. Preparing for multi-tenant SaaS launch to MTSOs across India." },
 ];
 
 export default function About() {
@@ -30,11 +30,11 @@ export default function About() {
           <AnimatedSection>
             <SectionLabel>About MedScribeAI</SectionLabel>
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-foreground leading-[1.08]">
-              We Run an MTSO.<br />
-              <span className="text-primary">We Built What We Needed.</span>
+              Built by People Who<br />
+              <span className="text-primary">Understand MTSOs.</span>
             </h1>
             <p className="mt-6 text-lg lg:text-xl text-muted-foreground font-medium leading-relaxed max-w-3xl">
-              MedScribeAI is built by NuScript Technologies, a Coimbatore-based medical transcription company. We built this platform to solve our own operational challenges — and now we're making it available to every MTSO in India.
+              MedScribeAI is built by NuScript Technologies — a Coimbatore-based technology company focused on modernizing medical transcription operations. We combine deep domain expertise with modern AI and cloud engineering to deliver the platform Indian MTSOs deserve.
             </p>
           </AnimatedSection>
         </div>
@@ -85,23 +85,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Founder */}
-      <section className="py-16 bg-muted/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection>
-            <div className="bg-white rounded-3xl border border-slate-100 p-8 sm:p-10" style={{ boxShadow: "0 2px 20px 0 rgba(0,0,0,0.04)" }}>
-              <h2 className="text-2xl font-extrabold text-foreground mb-4">Founded by Arvind</h2>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Arvind founded NuScript Technologies with a clear mission: modernize medical transcription for Indian MTSOs. After years of working with legacy platforms and separate HRMS tools, he set out to build the platform he wished existed — one that combines AI transcription, quality assurance, and workforce management into a single product.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Today, MedScribeAI processes real dictation for 30+ healthcare practice clients with a team of 90+ employees in Coimbatore.
-              </p>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       {/* Location & Vision */}
       <section className="py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 gap-8">
@@ -135,8 +118,8 @@ export default function About() {
       </section>
 
       <CTASection
-        title="Join Us in Modernizing Medical Transcription"
-        description="Be among the first MTSOs to adopt the platform that's already proven in production."
+        title="Ready to Modernize Your MTSO?"
+        description="See how MedScribeAI can transform your operations. No pitch deck — just a focused walkthrough with your numbers."
       />
     </>
   );

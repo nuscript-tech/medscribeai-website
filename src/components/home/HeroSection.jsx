@@ -40,7 +40,7 @@ export default function HeroSection() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary border border-accent text-sm font-medium text-primary">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              Production-tested with 90+ employees & 30 clients
+              Production-tested with 90+ daily users & 30+ practices
             </span>
           </motion.div>
 

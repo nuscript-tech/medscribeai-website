@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/30">© 2026 NuScript Technologies Private Limited — MedScribeAI. All rights reserved.</p>
+          <p className="text-xs text-white/30">© 2026 MedScribeAI, a product of <a href="https://nuscript.in" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 underline underline-offset-2 transition-colors">NuScript Technologies</a>. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">
               🔒 ISO 27001 Aligned

@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import AnimatedSection from "../shared/AnimatedSection";
 
 const proofStats = [
-  { value: "90+", label: "Employees Using Daily" },
-  { value: "30+", label: "Healthcare Practice Clients" },
+  { value: "90+", label: "Daily Active Users" },
+  { value: "30+", label: "Healthcare Practices Served" },
   { value: "1M+", label: "Lines Processed Monthly" },
 ];
 
@@ -22,7 +22,7 @@ export default function ProofSection() {
               Not a Prototype. A Production Platform.
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
-              MedScribeAI is in active daily use at a leading India and US-based MTSO — processing real medical dictation for real healthcare practice clients, every single day.
+              MedScribeAI is in active daily production — processing real medical dictation for real healthcare practices, every single day.
             </p>
           </div>
         </AnimatedSection>
