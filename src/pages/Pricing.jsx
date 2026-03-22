@@ -110,7 +110,7 @@ export default function Pricing() {
               </div>
             </div>
             <Link to="/RequestDemo">
-              <Button className="bg-white text-brand hover:bg-brand-light px-6 py-3 font-semibold rounded-lg whitespace-nowrap">
+              <Button className="bg-white text-brand hover:bg-brand-light px-6 py-3 font-semibold rounded-full shadow-lg hover:shadow-xl transition-all whitespace-nowrap">
                 Start Pilot <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>
@@ -152,7 +152,7 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <Link to="/RequestDemo" className="block">
-                  <Button className={`w-full py-3 rounded-lg font-semibold ${tier.popular ? 'bg-brand hover:bg-brand-hover text-white' : 'bg-brand-cool-gray hover:bg-gray-200 text-brand-navy'}`}>
+                  <Button className={`w-full py-3 rounded-full font-semibold transition-all ${tier.popular ? 'bg-gradient-to-b from-brand to-brand-hover text-white shadow-lg shadow-brand/20 hover:shadow-xl' : 'bg-brand-cool-gray hover:bg-gray-200 text-brand-navy'}`}>
                     Get Started
                   </Button>
                 </Link>
@@ -213,7 +213,7 @@ export default function Pricing() {
           <h2 className="text-3xl font-extrabold text-brand-navy mb-4">Need a Custom Quote?</h2>
           <p className="text-lg text-brand-text mb-8">For MTSOs with unique requirements or very high volumes, we offer custom pricing. Let's talk.</p>
           <Link to="/RequestDemo">
-            <Button size="lg" className="bg-brand hover:bg-brand-hover text-white px-10 py-6 text-lg rounded-lg font-semibold">
+            <Button size="lg" className="bg-gradient-to-b from-brand to-brand-hover text-white px-10 py-6 text-lg rounded-full font-semibold shadow-xl shadow-brand/25 hover:shadow-2xl hover:shadow-brand/30 transition-all">
               Contact Sales <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

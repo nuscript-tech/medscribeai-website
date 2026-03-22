@@ -29,7 +29,7 @@ const hrmsFeatures = [
   { icon: Calculator, title: 'Compensation & Payroll', desc: 'CDE & QAS compensation models with incentive tiers, line-based pay calculations, holiday/Sunday premiums, and payroll exports.' },
 ];
 
-const Section = ({ tag, tagColor, title, desc, features, children }) => (
+const Section = ({ tag, tagColor, title, desc, features, cols = 3, children }) => (
   <section className="py-20">
     <div className="max-w-7xl mx-auto px-6">
       <div className="max-w-3xl mb-12">
@@ -37,7 +37,7 @@ const Section = ({ tag, tagColor, title, desc, features, children }) => (
         <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3 mb-4">{title}</h2>
         <p className="text-lg text-brand-text leading-relaxed">{desc}</p>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className={`grid sm:grid-cols-2 ${cols === 3 ? 'lg:grid-cols-3' : ''} gap-6`}>
         {features.map((f, i) => (
           <motion.div key={i} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} transition={{ delay: i * 0.05 }}
@@ -109,13 +109,13 @@ export default function Platform() {
       <div className="bg-brand-cool-gray">
         <Section tag="Quality Assurance" tagColor="text-brand" title="Enterprise-Grade QA Workflow"
           desc="The most comprehensive QA system built for medical transcription — 13 error categories, accuracy scoring, audit sampling, and full accountability tracking."
-          features={qaFeatures} />
+          features={qaFeatures} cols={2} />
       </div>
 
       <div className="bg-white">
         <Section tag="Workforce Management" tagColor="text-brand-mint" title="Complete HRMS — Built In, Not Bolted On"
           desc="No more paying for a separate HRMS. MedScribeAI includes everything you need to manage your MTSO workforce, deeply integrated with your production data."
-          features={hrmsFeatures} />
+          features={hrmsFeatures} cols={2} />
       </div>
 
       {/* Tech Stack */}
@@ -125,7 +125,7 @@ export default function Platform() {
           <h2 className="text-3xl font-extrabold text-brand-navy mb-4">See the Platform in Action</h2>
           <p className="text-lg text-brand-text mb-8">Schedule a private demo and see how MedScribeAI can transform your MTSO operations.</p>
           <Link to="/RequestDemo">
-            <Button size="lg" className="bg-brand hover:bg-brand-hover text-white px-10 py-6 text-lg rounded-lg font-semibold">
+            <Button size="lg" className="bg-gradient-to-b from-brand to-brand-hover text-white px-10 py-6 text-lg rounded-full font-semibold shadow-xl shadow-brand/25 hover:shadow-2xl hover:shadow-brand/30 transition-all">
               Request a Demo <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

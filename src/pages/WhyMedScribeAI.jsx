@@ -172,7 +172,7 @@ export default function WhyMedScribeAI() {
           <h2 className="text-3xl font-extrabold text-brand-navy mb-4">Ready to Move Beyond Legacy?</h2>
           <p className="text-lg text-brand-text mb-8">See how MedScribeAI compares with your specific setup. We'll walk through the numbers for your MTSO.</p>
           <Link to="/RequestDemo">
-            <Button size="lg" className="bg-brand hover:bg-brand-hover text-white px-10 py-6 text-lg rounded-lg font-semibold">
+            <Button size="lg" className="bg-gradient-to-b from-brand to-brand-hover text-white px-10 py-6 text-lg rounded-full font-semibold shadow-xl shadow-brand/25 hover:shadow-2xl hover:shadow-brand/30 transition-all">
               Request a Demo <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

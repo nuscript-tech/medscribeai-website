@@ -103,7 +103,7 @@ export default function HowItWorks() {
             MedScribeAI is not a fully automated system. Every document is reviewed by a trained CDE before delivery. The AI accelerates the process — your team guarantees the quality.
           </p>
           <Link to="/RequestDemo">
-            <Button size="lg" className="bg-white text-brand hover:bg-brand-light px-10 py-6 text-lg rounded-lg font-semibold">
+            <Button size="lg" className="bg-white text-brand hover:bg-brand-light px-10 py-6 text-lg rounded-full font-semibold shadow-lg hover:shadow-xl transition-all">
               See It in Action <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

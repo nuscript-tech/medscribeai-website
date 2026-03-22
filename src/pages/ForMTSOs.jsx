@@ -123,7 +123,7 @@ export default function ForMTSOs() {
           <h2 className="text-3xl font-extrabold text-brand-navy mb-4">See the Numbers for Your MTSO</h2>
           <p className="text-lg text-brand-text mb-8">Share your monthly volume and current costs — we'll build a custom ROI analysis for your operation.</p>
           <Link to="/RequestDemo">
-            <Button size="lg" className="bg-brand hover:bg-brand-hover text-white px-10 py-6 text-lg rounded-lg font-semibold">
+            <Button size="lg" className="bg-gradient-to-b from-brand to-brand-hover text-white px-10 py-6 text-lg rounded-full font-semibold shadow-xl shadow-brand/25 hover:shadow-2xl hover:shadow-brand/30 transition-all">
               Request a Demo <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

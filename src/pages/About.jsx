@@ -134,7 +134,7 @@ export default function About() {
           <h2 className="text-3xl font-extrabold text-white mb-4">Join Us in Modernizing Medical Transcription</h2>
           <p className="text-xl text-brand-light mb-8">Be among the first MTSOs to adopt the platform that's already proven in production.</p>
           <Link to="/RequestDemo">
-            <Button size="lg" className="bg-white text-brand hover:bg-brand-light px-10 py-6 text-lg rounded-lg font-semibold">
+            <Button size="lg" className="bg-white text-brand hover:bg-brand-light px-10 py-6 text-lg rounded-full font-semibold shadow-lg hover:shadow-xl transition-all">
               Request a Demo <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

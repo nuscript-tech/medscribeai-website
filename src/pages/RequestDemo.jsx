@@ -152,7 +152,7 @@ export default function RequestDemo() {
                     </div>
                     {error && <p className="text-red-600 text-sm">{error}</p>}
                     <Button onClick={handleSubmit} disabled={isSubmitting || !formData.name || !formData.company || !formData.email}
-                      className="w-full bg-brand hover:bg-brand-hover text-white py-3 rounded-lg font-semibold text-base">
+                      className="w-full bg-gradient-to-b from-brand to-brand-hover text-white py-3 rounded-full font-semibold text-base shadow-lg shadow-brand/20 hover:shadow-xl transition-all">
                       {isSubmitting ? 'Submitting...' : 'Request Demo'}
                       {!isSubmitting && <Send className="ml-2 w-4 h-4" />}
                     </Button>

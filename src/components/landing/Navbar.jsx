@@ -43,12 +43,12 @@ export default function Navbar() {
                 </Link>
               ))}
               <a href="https://app.medscribeai.in" className="flex-shrink-0">
-                <Button variant="outline" className="text-brand-navy border-gray-300 px-5 rounded-lg">
+                <Button variant="outline" className="text-brand-navy border-gray-200 px-5 rounded-full">
                   Login
                 </Button>
               </a>
               <Link to="/RequestDemo" className="flex-shrink-0">
-                <Button className="bg-brand hover:bg-brand-hover text-white px-5 rounded-lg shadow-lg shadow-brand/20">
+                <Button className="bg-gradient-to-b from-brand to-brand-hover text-white px-5 rounded-full shadow-lg shadow-brand/20 hover:shadow-xl hover:shadow-brand/25 transition-all">
                   Request Demo
                   <ArrowRight className="ml-1.5 w-4 h-4" />
                 </Button>
@@ -85,12 +85,12 @@ export default function Navbar() {
               ))}
               <div className="pt-4 space-y-3">
                 <a href="https://app.medscribeai.in" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button variant="outline" className="w-full text-brand-navy border-gray-300 rounded-lg">
+                  <Button variant="outline" className="w-full text-brand-navy border-gray-200 rounded-full">
                     Login
                   </Button>
                 </a>
                 <Link to="/RequestDemo" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button className="w-full bg-brand hover:bg-brand-hover text-white rounded-lg mt-3">
+                  <Button className="w-full bg-gradient-to-b from-brand to-brand-hover text-white rounded-full mt-3 shadow-lg shadow-brand/20">
                     Request Demo
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>

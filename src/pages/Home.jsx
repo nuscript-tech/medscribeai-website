@@ -75,13 +75,13 @@ export default function Home() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
               className="flex flex-col sm:flex-row items-start gap-4 mb-14">
               <Link to="/RequestDemo">
-                <Button size="lg" className="bg-brand hover:bg-brand-hover text-white px-8 py-6 text-lg rounded-lg font-semibold shadow-xl shadow-brand/20">
+                <Button size="lg" className="bg-gradient-to-b from-brand to-brand-hover text-white px-10 py-6 text-lg rounded-full font-semibold shadow-xl shadow-brand/25 hover:shadow-2xl hover:shadow-brand/30 transition-all">
                   Request a Demo
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
               <Link to="/ForMTSOs">
-                <Button variant="outline" size="lg" className="px-8 py-6 text-lg rounded-lg border-2 border-gray-300 hover:border-gray-400 hover:bg-brand-light font-semibold">
+                <Button variant="outline" size="lg" className="px-10 py-6 text-lg rounded-full border-2 border-gray-200 hover:border-gray-300 hover:bg-brand-cool-gray font-semibold transition-all">
                   See the ROI Math
                 </Button>
               </Link>
@@ -196,13 +196,13 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/RequestDemo">
-              <Button size="lg" className="bg-brand hover:bg-brand-hover text-white px-10 py-6 text-lg rounded-lg font-semibold shadow-xl shadow-brand/20">
+              <Button size="lg" className="bg-gradient-to-b from-brand to-brand-hover text-white px-10 py-6 text-lg rounded-full font-semibold shadow-xl shadow-brand/25 hover:shadow-2xl hover:shadow-brand/30 transition-all">
                 Request a Demo
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
             <Link to="/Pricing">
-              <Button variant="outline" size="lg" className="px-10 py-6 text-lg rounded-lg border-2 border-gray-300 font-semibold">
+              <Button variant="outline" size="lg" className="px-10 py-6 text-lg rounded-full border-2 border-gray-200 hover:border-gray-300 hover:bg-brand-cool-gray font-semibold transition-all">
                 See Pricing
                 <ChevronRight className="ml-1 w-5 h-5" />
               </Button>
