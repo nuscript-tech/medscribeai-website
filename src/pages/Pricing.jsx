@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import { Check, Sparkles, ArrowRight } from "lucide-react";
+import { Check, Sparkles, ArrowRight, IndianRupee } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
@@ -13,8 +13,8 @@ const plans = [
     name: "Starter",
     size: "5–20 employees",
     price: "₹25,000",
-    perLine: "₹0.45",
-    arr: "₹8–12 Lakhs",
+    perLine: "₹0.70",
+    arr: "₹12–18 Lakhs",
     popular: false,
     features: [
       "AI transcription pipeline",
@@ -30,8 +30,8 @@ const plans = [
     name: "Professional",
     size: "20–100 employees",
     price: "₹50,000",
-    perLine: "₹0.40",
-    arr: "₹30–45 Lakhs",
+    perLine: "₹0.60",
+    arr: "₹42–66 Lakhs",
     popular: true,
     features: [
       "Everything in Starter, plus:",
@@ -47,8 +47,8 @@ const plans = [
     name: "Enterprise",
     size: "100+ employees",
     price: "₹1,00,000",
-    perLine: "₹0.35",
-    arr: "₹75L–1.2 Crore",
+    perLine: "₹0.50",
+    arr: "₹1.02–1.32 Crore",
     popular: false,
     features: [
       "Everything in Professional, plus:",
@@ -108,7 +108,7 @@ export default function Pricing() {
       </section>
 
       {/* Pilot Banner */}
-      <section className="pb-16">
+      <section className="pb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="bg-primary rounded-2xl p-6 lg:p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -126,6 +126,25 @@ export default function Pricing() {
                   Start Pilot <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* INR Pricing Advantage */}
+      <section className="pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 flex items-center gap-4">
+              <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center shrink-0">
+                <IndianRupee className="w-5 h-5 text-emerald-600" />
+              </div>
+              <div>
+                <h4 className="font-bold text-foreground text-sm">100% INR Pricing — Zero Dollar Exposure</h4>
+                <p className="text-muted-foreground text-sm mt-0.5">
+                  Legacy platforms bill in USD. With the rupee at ₹93+, your costs rise every year. MedScribeAI is priced entirely in INR — predictable costs, no currency risk.
+                </p>
+              </div>
             </div>
           </AnimatedSection>
         </div>
