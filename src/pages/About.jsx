@@ -13,7 +13,7 @@ const values = [
 
 const milestones = [
   { year: "2000", text: "Our founder enters the HIM/RCM sector, laying the groundwork for two decades of expertise in global documentation standards." },
-  { year: "2000–25", text: "25 years building health-tech ventures across the US and Indian markets — mastering the 'Truth of the Document' in clinical documentation and revenue cycle management." },
+  { year: "2000–2025", text: "25 years building health-tech ventures across the US and Indian markets — mastering the 'Truth of the Document' in clinical documentation and revenue cycle management." },
   { year: "2026", text: "NuScript Technologies is born in Coimbatore. MedScribeAI platform built and proven at scale — bringing autonomous AI to Indian MTSOs." },
 ];
 
@@ -69,8 +69,8 @@ export default function About() {
             {milestones.map((m, i) => (
               <AnimatedSection key={i} delay={i * 0.1}>
                 <div className="flex gap-6 sm:gap-8">
-                  <div className="flex-shrink-0 w-20 text-right">
-                    <span className="text-2xl font-extrabold text-primary">{m.year}</span>
+                  <div className="flex-shrink-0 w-32 text-right">
+                    <span className="text-2xl font-extrabold text-primary whitespace-nowrap">{m.year}</span>
                   </div>
                   <div className="relative pt-1">
                     <div className="absolute top-2 -left-[5px] w-2.5 h-2.5 bg-primary rounded-full ring-4 ring-secondary" />
