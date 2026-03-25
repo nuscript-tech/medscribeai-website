@@ -13,7 +13,7 @@ const values = [
 
 const milestones = [
   { year: "2000", text: "Our founder enters the HIM/RCM sector, laying the groundwork for two decades of expertise in global documentation standards." },
-  { year: "2000–2025", text: "25 years building health-tech ventures across the US and Indian markets — mastering the 'Truth of the Document' in clinical documentation and revenue cycle management." },
+  { year: "2000–25", text: "25 years building health-tech ventures across the US and Indian markets — mastering the 'Truth of the Document' in clinical documentation and revenue cycle management." },
   { year: "2026", text: "NuScript Technologies is born in Coimbatore. MedScribeAI platform built and proven at scale — bringing autonomous AI to Indian MTSOs." },
 ];
 
@@ -21,7 +21,7 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 lg:pt-44 lg:pb-20 relative overflow-hidden">
+      <section className="pt-32 pb-20 lg:pt-44 lg:pb-28 relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
           <div className="absolute top-40 right-20 w-96 h-96 bg-accent/30 rounded-full blur-3xl" />
@@ -29,11 +29,11 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <SectionLabel>About MedScribeAI</SectionLabel>
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-foreground leading-[1.08]">
+            <h1 className="text-4xl lg:text-6xl font-extrabold text-foreground leading-tight max-w-3xl">
               Built by People Who<br />
               <span className="text-primary">Understand MTSOs.</span>
             </h1>
-            <p className="mt-6 text-lg lg:text-xl text-muted-foreground font-medium leading-relaxed max-w-3xl">
+            <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
               MedScribeAI is built by NuScript Technologies — a Coimbatore-based technology company focused on modernizing medical transcription operations. We combine deep domain expertise with modern AI and cloud engineering to deliver the platform Indian MTSOs deserve.
             </p>
           </AnimatedSection>
