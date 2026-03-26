@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700,800,900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,20 +6,20 @@
 
 @layer base {
   :root {
-    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+    --font-jakarta: 'Satoshi', sans-serif;
 
     /* Backgrounds */
     --background: 0 0% 100%;              /* #FFFFFF */
-    --foreground: 233 36% 17%;            /* #1B1F3B Deep Slate Navy */
+    --foreground: 222 47% 11%;            /* #1B1F3B Deep Slate Navy */
 
     --card: 0 0% 100%;
-    --card-foreground: 233 36% 17%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 233 36% 17%;
+    --popover-foreground: 222 47% 11%;
 
     /* Primary: #2A6FF2 Professional Blue */
-    --primary: 220 89% 56%;
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
 
     /* Secondary: #E8F1FF Soft Sky Blue */
@@ -39,24 +39,24 @@
 
     --border: 216 20% 91%;
     --input: 216 20% 91%;
-    --ring: 220 89% 56%;
+    --ring: 221 83% 53%;
 
-    --chart-1: 220 89% 56%;
+    --chart-1: 221 83% 53%;
     --chart-2: 171 100% 38%;
-    --chart-3: 233 36% 17%;
+    --chart-3: 222 47% 11%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 233 36% 17%;
-    --sidebar-primary: 220 89% 56%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 218 100% 95%;
     --sidebar-accent-foreground: 220 89% 40%;
     --sidebar-border: 216 20% 91%;
-    --sidebar-ring: 220 89% 56%;
+    --sidebar-ring: 221 83% 53%;
   }
 
   .dark {
