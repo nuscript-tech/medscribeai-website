@@ -33,7 +33,7 @@ export default function Footer() {
             <p className="text-sm leading-relaxed max-w-md text-white/60">
               The modern SaaS platform for Indian MTSOs — replacing legacy transcription platforms and standalone HRMS with AI-powered transcription, QA workflows, and workforce management in a single product.
             </p>
-            <a href="mailto:hello@medscribeai.in" className="inline-flex items-center gap-2 mt-4 text-sm transition-colors hover:text-[#2563EB]" style={{color: "#00C4A7"}}>
+            <a href="mailto:hello@medscribeai.in" className="inline-flex items-center gap-2 mt-4 text-sm text-[#00C4A7] transition-colors hover:text-[#2563EB]">
               <Mail className="w-4 h-4" />
               hello@medscribeai.in
             </a>
@@ -55,7 +55,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.path}>
-                  <Link to={link.path} className="text-sm transition-colors hover:text-[#2563EB]" style={{color: "#E8F1FF"}}>{link.label}</Link>
+                  <Link to={link.path} className="text-sm text-[#E8F1FF] transition-colors hover:text-[#2563EB]">{link.label}</Link>
                 </li>
               ))}
             </ul>
