@@ -103,3 +103,26 @@ html {
   scroll-behavior: smooth;
   font-size: 17px;
 }
+
+/* Footer link hover styles */
+.footer-link {
+  color: #E8F1FF;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: #2563EB;
+}
+.footer-email {
+  color: #00C4A7;
+  transition: color 0.2s;
+}
+.footer-email:hover {
+  color: #2563EB;
+}
+.footer-bottom-link {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s;
+}
+.footer-bottom-link:hover {
+  color: #2563EB;
+}

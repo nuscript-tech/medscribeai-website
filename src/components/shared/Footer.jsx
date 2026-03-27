@@ -33,7 +33,7 @@ export default function Footer() {
             <p className="text-sm leading-relaxed max-w-md text-white/60">
               The modern SaaS platform for Indian MTSOs — replacing legacy transcription platforms and standalone HRMS with AI-powered transcription, QA workflows, and workforce management in a single product.
             </p>
-            <a href="mailto:hello@medscribeai.in" className="inline-flex items-center gap-2 mt-4 text-sm text-[#00C4A7] transition-colors hover:text-[#2563EB]">
+            <a href="mailto:hello@medscribeai.in" className="inline-flex items-center gap-2 mt-4 text-sm footer-email">
               <Mail className="w-4 h-4" />
               hello@medscribeai.in
             </a>
@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {platformLinks.map((link) => (
                 <li key={link.path}>
-                  <Link to={link.path} className="text-sm text-[#E8F1FF] transition-colors hover:text-[#2563EB]">{link.label}</Link>
+                  <Link to={link.path} className="text-sm footer-link">{link.label}</Link>
                 </li>
               ))}
             </ul>
@@ -55,7 +55,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {companyLinks.map((link) => (
                 <li key={link.path}>
-                  <Link to={link.path} className="text-sm text-[#E8F1FF] transition-colors hover:text-[#2563EB]">{link.label}</Link>
+                  <Link to={link.path} className="text-sm footer-link">{link.label}</Link>
                 </li>
               ))}
             </ul>
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/50">© 2026 MedScribeAI, a product of <a href="https://nuscript.in" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 transition-colors hover:text-[#2563EB]">NuScript Technologies</a>. All rights reserved.</p>
+          <p className="text-xs text-white/50">© 2026 MedScribeAI, a product of <a href="https://nuscript.in" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 footer-bottom-link">NuScript Technologies</a>. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1.5 text-xs px-3 py-1 rounded-full border border-white/20 text-white/60">
               🔒 ISO 27001 Aligned
