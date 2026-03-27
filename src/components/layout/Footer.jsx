@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {platformLinks.map((link) => (
                 <li key={link.path}>
-                  <Link to={link.path} className="text-sm transition-colors hover:text-[#2563EB]" style={{color: "#E8F1FF"}}>{link.label}</Link>
+                  <Link to={link.path} className="text-sm text-[#E8F1FF] transition-colors hover:text-[#2563EB]">{link.label}</Link>
                 </li>
               ))}
             </ul>
