@@ -58,11 +58,8 @@ export default function ProblemSection() {
             >
               <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-destructive/30 to-transparent" />
               <div className="absolute top-0 left-0 w-40 h-40 bg-gradient-to-br from-red-50/80 to-transparent rounded-3xl pointer-events-none" />
-              <div className="relative flex items-start gap-5">
-                <span className="text-6xl font-extrabold shrink-0 leading-none select-none" style={{ color: "rgba(203,213,225,0.7)" }}>
-                  {p.number}
-                </span>
-                <div>
+              <div className="relative">
+                <div>              
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-2xl flex items-center justify-center shadow-sm ring-1 ring-red-100" style={{ background: "linear-gradient(145deg, #fff1f1 0%, #fee2e2 100%)", color: "#ef4444" }}>
                       <p.icon className="w-5 h-5" />
