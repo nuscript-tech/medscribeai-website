@@ -118,7 +118,7 @@ export default function Pricing() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white">Pilot Program</h3>
-                  <p className="text-white/80 text-sm">1 month free + 1 month at 50% off. Risk-free onboarding.</p>
+                  <p className="text-white/80 text-sm">1 month free. Risk-free onboarding.</p>
                 </div>
               </div>
               <Link to="/request-demo">
