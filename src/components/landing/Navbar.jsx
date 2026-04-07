@@ -18,17 +18,12 @@ export default function Navbar() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-20">
-            <Link to="/" className="flex items-center gap-2.5">
-              <div className="w-9 h-9 bg-brand rounded-lg flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" fill="white" opacity="0.9"/>
-                  <path d="M2 17l10 5 10-5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M2 12l10 5 10-5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <span className="text-xl font-bold text-brand-navy">
-                MedScribe<span className="text-brand">AI</span>
-              </span>
+            <Link to="/" className="flex items-center">
+              <img
+                src="/medscribe-logo.png"
+                alt="MedScribeAI"
+                className="h-8 w-auto"
+              />
             </Link>
 
             <div className="hidden lg:flex items-center gap-7 h-20">
