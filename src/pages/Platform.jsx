@@ -163,7 +163,7 @@ export default function Platform() {
 
       <CTASection
         title="See the Platform in Action"
-        description="Schedule a private demo and see how MedScribeAI can transform your MTSO operations."
+        description="Schedule a private demo and see how MedScribeAI can transform your MTSO operations. Start with a free pilot."
       />
     </>
   );
