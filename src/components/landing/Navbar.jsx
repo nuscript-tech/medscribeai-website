@@ -10,7 +10,6 @@ export default function Navbar() {
     { name: 'Platform', path: '/Platform' },
     { name: 'For MTSOs', path: '/ForMTSOs' },
     { name: 'How It Works', path: '/HowItWorks' },
-    { name: 'Pricing', path: '/Pricing' },
     { name: 'Why Us', path: '/WhyMedScribeAI' },
   ];
 

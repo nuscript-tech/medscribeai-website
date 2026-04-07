@@ -41,7 +41,6 @@ export default function Footer() {
               <li><Link to="/Platform" className="text-gray-400 hover:text-white text-[14px] transition-colors">Product Overview</Link></li>
               <li><Link to="/HowItWorks" className="text-gray-400 hover:text-white text-[14px] transition-colors">How It Works</Link></li>
               <li><Link to="/ForMTSOs" className="text-gray-400 hover:text-white text-[14px] transition-colors">For MTSOs</Link></li>
-              <li><Link to="/Pricing" className="text-gray-400 hover:text-white text-[14px] transition-colors">Pricing</Link></li>
               <li><Link to="/WhyMedScribeAI" className="text-gray-400 hover:text-white text-[14px] transition-colors">Why MedScribeAI</Link></li>
             </ul>
           </div>

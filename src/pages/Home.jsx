@@ -19,8 +19,6 @@ export default function Home() {
         description="Join the pilot program — 1 month free. Risk-free onboarding. See the productivity gains and cost savings firsthand."
         primaryLabel="Request a Demo"
         primaryLink="/request-demo"
-        secondaryLabel="See Pricing"
-        secondaryLink="/pricing"
       />
     </>
   );

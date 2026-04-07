@@ -8,7 +8,6 @@ const navLinks = [
   { label: "Platform", path: "/platform" },
   { label: "For MTSOs", path: "/for-mtsos" },
   { label: "How It Works", path: "/how-it-works" },
-  { label: "Pricing", path: "/pricing" },
   { label: "Why Us", path: "/why-us" },
 ];
 
@@ -40,7 +39,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="flex items-center group">
             <img
-              src="/medscribe-logo.png"
+              src="/medscribe-logo.jpg"
               alt="MedScribeAI"
               className="h-8 w-auto"
             />

@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import Platform from './pages/Platform';
 import ForMTSOs from './pages/ForMTSOs';
 import HowItWorks from './pages/HowItWorks';
-import Pricing from './pages/Pricing';
 import WhyUs from './pages/WhyUs';
 import RequestDemo from './pages/RequestDemo';
 import About from './pages/About';
@@ -20,7 +19,6 @@ function App() {
           <Route path="/platform" element={<Platform />} />
           <Route path="/for-mtsos" element={<ForMTSOs />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/pricing" element={<Pricing />} />
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/request-demo" element={<RequestDemo />} />
           <Route path="/about" element={<About />} />
