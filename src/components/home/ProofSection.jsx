@@ -128,26 +128,26 @@ export default function ProofSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-16 relative rounded-3xl overflow-hidden"
+          className="mt-16 relative rounded-3xl overflow-hidden border border-slate-100"
           style={{ boxShadow: "0 8px 40px 0 rgba(42,111,242,0.12), 0 2px 8px 0 rgba(0,0,0,0.04)" }}
         >
-          {/* Background gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900" />
-          {/* Subtle pattern overlay */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
+          {/* Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-white via-blue-50/60 to-secondary/40" />
+          {/* Subtle glow */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent/30 rounded-full blur-3xl" />
           {/* Top accent line */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-blue-400 to-primary/60" />
 
           <div className="relative p-10 lg:p-14 text-center">
-            <p className="text-lg lg:text-xl font-semibold text-slate-300">
+            <p className="text-lg lg:text-xl font-semibold text-muted-foreground">
               A 15% margin becoming 30% doesn't just improve cash flow.
             </p>
-            <p className="mt-3 text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+            <p className="mt-3 text-3xl lg:text-4xl font-extrabold bg-gradient-to-br from-primary via-blue-500 to-primary/70 bg-clip-text text-transparent">
               It doubles your company's valuation.
             </p>
-            <div className="mt-6 w-16 h-px mx-auto bg-gradient-to-r from-transparent via-blue-400/50 to-transparent" />
-            <p className="mt-6 text-base text-blue-200/80 italic font-medium">
+            <div className="mt-6 w-16 h-px mx-auto bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+            <p className="mt-6 text-base text-muted-foreground italic font-medium">
               Your typists become editors. Your editors become a force multiplier.
             </p>
           </div>
