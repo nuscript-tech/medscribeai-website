@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Brain, Mic, Globe, RefreshCw, FileText, Layers, AlertTriangle, Target, BarChart2, FileSearch, Users, CalendarDays, Clock, Wallet } from "lucide-react";
+import { Brain, Mic, Globe, RefreshCw, FileText, Layers, AlertTriangle, Target, BarChart2, FileSearch, Users, CalendarDays, Clock, Wallet, Zap, PenTool, ShieldCheck, Cloud, MonitorSmartphone, ArrowRight } from "lucide-react";
 import AnimatedSection from "../components/shared/AnimatedSection";
 import SectionLabel from "../components/shared/SectionLabel";
 import CTASection from "../components/shared/CTASection";
@@ -82,21 +82,27 @@ export default function Platform() {
             {[
               {
                 step: "01",
+                icon: Zap,
                 title: "AI Does the Heavy Lifting",
                 desc: "Audio goes in. Our AI pipeline handles speech-to-text, template insertion, macro expansion, and formatting — delivering a near-complete draft in seconds.",
-                color: "primary",
+                accent: "#2A6FF2",
+                accentBg: "linear-gradient(145deg, #EEF4FF 0%, #dbeafe 100%)",
               },
               {
                 step: "02",
+                icon: PenTool,
                 title: "Editors Review & Refine",
                 desc: "Your team shifts from typing every word to reviewing AI-generated drafts. Clinical accuracy and quality — the work humans do best. 2x the output, less physical strain.",
-                color: "primary",
+                accent: "#2A6FF2",
+                accentBg: "linear-gradient(145deg, #EEF4FF 0%, #dbeafe 100%)",
               },
               {
                 step: "03",
+                icon: ShieldCheck,
                 title: "QA Ensures Quality at Scale",
                 desc: "13 error categories, accuracy scoring, audit sampling, and accountability tracking ensure that doubling volume never means compromising quality.",
-                color: "primary",
+                accent: "#2A6FF2",
+                accentBg: "linear-gradient(145deg, #EEF4FF 0%, #dbeafe 100%)",
               },
             ].map((card, i) => (
               <motion.div
@@ -105,13 +111,43 @@ export default function Platform() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.15 }}
-                className="relative bg-card rounded-2xl border border-primary/20 ring-1 ring-primary/10 p-8 hover:shadow-lg transition-all duration-300"
+                className="group relative bg-white rounded-3xl border border-slate-100 p-8 hover:shadow-[0_8px_40px_rgba(42,111,242,0.13)] transition-all duration-500 overflow-hidden"
+                style={{ boxShadow: "0 2px 20px 0 rgba(42,111,242,0.07), 0 1px 4px 0 rgba(0,0,0,0.04)" }}
               >
-                <span className="text-5xl font-extrabold text-primary/10">{card.step}</span>
-                <h3 className="mt-2 text-xl font-bold text-foreground">{card.title}</h3>
-                <p className="mt-3 text-muted-foreground leading-relaxed">{card.desc}</p>
+                {/* Gradient top border */}
+                <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+                {/* Corner glow */}
+                <div className="absolute top-0 left-0 w-40 h-40 bg-gradient-to-br from-secondary/60 to-transparent rounded-3xl pointer-events-none" />
+
+                <div className="relative">
+                  {/* Step badge + icon row */}
+                  <div className="flex items-center justify-between mb-5">
+                    <div className="w-[52px] h-[52px] rounded-2xl flex items-center justify-center shadow-sm ring-1 ring-primary/10 group-hover:scale-105 transition-transform duration-300" style={{ background: card.accentBg, color: card.accent }}>
+                      <card.icon className="w-6 h-6" />
+                    </div>
+                    <span className="text-sm font-bold text-primary/30 uppercase tracking-widest">Step {card.step}</span>
+                  </div>
+
+                  <h3 className="text-xl font-bold text-foreground mb-3">{card.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-[15px]">{card.desc}</p>
+                </div>
               </motion.div>
             ))}
+          </div>
+
+          {/* Flow connector — visible on desktop */}
+          <div className="hidden md:flex items-center justify-center gap-3 mt-8">
+            <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary/30" />
+            <span className="text-xs font-bold text-primary/40 uppercase tracking-widest">Audio In</span>
+            <ArrowRight className="w-4 h-4 text-primary/30" />
+            <span className="text-xs font-bold text-primary/40 uppercase tracking-widest">AI Draft</span>
+            <ArrowRight className="w-4 h-4 text-primary/30" />
+            <span className="text-xs font-bold text-primary/40 uppercase tracking-widest">Editor Review</span>
+            <ArrowRight className="w-4 h-4 text-primary/30" />
+            <span className="text-xs font-bold text-primary/40 uppercase tracking-widest">QA Verified</span>
+            <ArrowRight className="w-4 h-4 text-primary/30" />
+            <span className="text-xs font-bold text-primary/40 uppercase tracking-widest">Delivered</span>
+            <div className="h-px w-20 bg-gradient-to-l from-transparent to-primary/30" />
           </div>
         </div>
       </section>
@@ -177,14 +213,53 @@ export default function Platform() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-primary/20 rounded-2xl p-8 lg:p-10 text-center"
+            className="relative rounded-3xl border border-slate-100 overflow-hidden"
+            style={{ boxShadow: "0 8px 40px 0 rgba(42,111,242,0.12), 0 2px 8px 0 rgba(0,0,0,0.04)" }}
           >
-            <h3 className="text-2xl lg:text-3xl font-extrabold text-foreground">
-              100% Cloud. Zero Installation. Operational by Tomorrow Morning.
-            </h3>
-            <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
-              No hardware to provision. No software to install. No IT changes required. Your editors access MedScribeAI through a standard web browser. Setup completes in hours — your team can be processing real production work by the next business morning.
-            </p>
+            {/* Background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-white via-blue-50/60 to-secondary/40" />
+            {/* Subtle glows */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent/30 rounded-full blur-3xl" />
+            {/* Top accent line */}
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-blue-400 to-primary/60" />
+
+            <div className="relative p-10 lg:p-14">
+              <div className="text-center mb-10">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-5 shadow-sm ring-1 ring-primary/10 mx-auto" style={{ background: "linear-gradient(145deg, #EEF4FF 0%, #dbeafe 100%)", color: "#2A6FF2" }}>
+                  <Cloud className="w-7 h-7" />
+                </div>
+                <h3 className="text-2xl lg:text-3xl font-extrabold text-foreground">
+                  100% Cloud. Zero Installation.
+                </h3>
+                <p className="text-2xl lg:text-3xl font-extrabold bg-gradient-to-br from-primary via-blue-500 to-primary/70 bg-clip-text text-transparent">
+                  Operational by Tomorrow Morning.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                {[
+                  { icon: Cloud, title: "No Hardware", desc: "Nothing to provision, rack, or maintain. Everything runs in the cloud." },
+                  { icon: MonitorSmartphone, title: "Browser-Based", desc: "Your editors access MedScribeAI through any standard web browser. No downloads." },
+                  { icon: Clock, title: "Hours to Go-Live", desc: "Setup completes in hours. Your team processes real production work by next morning." },
+                ].map((item, i) => (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
+                    className="text-center"
+                  >
+                    <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl mb-3 shadow-sm ring-1 ring-primary/10" style={{ background: "linear-gradient(145deg, #EEF4FF 0%, #dbeafe 100%)", color: "#2A6FF2" }}>
+                      <item.icon className="w-5 h-5" />
+                    </div>
+                    <h4 className="text-sm font-bold text-foreground mb-1">{item.title}</h4>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
