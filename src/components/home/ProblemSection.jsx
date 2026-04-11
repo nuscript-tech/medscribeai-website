@@ -1,33 +1,33 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Monitor, Users, PenTool, Ban } from "lucide-react";
+import { PenTool, TrendingDown, HeartCrack, Lock } from "lucide-react";
 import AnimatedSection from "../shared/AnimatedSection";
 import SectionLabel from "../shared/SectionLabel";
 
 const problems = [
   {
-    icon: Monitor,
-    number: "01",
-    title: "Legacy Platforms",
-    desc: "iMedX, EMDAT/3M Solventum — built 15+ years ago with no AI capabilities and enterprise-level pricing.",
-  },
-  {
-    icon: Users,
-    number: "02",
-    title: "Separate HRMS",
-    desc: "GreytHR, Zoho People, Keka — a second system, second cost, and zero integration with your transcription workflow.",
-  },
-  {
     icon: PenTool,
-    number: "03",
-    title: "Manual Inefficiency",
-    desc: "CDEs typing 500 lines/day from scratch. No AI assistance, no learning loop, no productivity gains.",
+    number: "01",
+    title: "Stuck at 500 Lines/Day",
+    desc: "Your editors type every word from scratch — 8 hours of repetitive keystrokes for 500 lines. That's not productivity; that's endurance.",
   },
   {
-    icon: Ban,
+    icon: TrendingDown,
+    number: "02",
+    title: "Margins Squeezed to 15%",
+    desc: "Labor is 60–70% of your costs. When your biggest expense is tied to manual typing speed, there's a hard ceiling on profitability.",
+  },
+  {
+    icon: HeartCrack,
+    number: "03",
+    title: "Burnout & Attrition",
+    desc: "Repetitive typing causes physical strain, RSI, and fatigue. Your best editors leave because the job is relentless — and replacing them costs months.",
+  },
+  {
+    icon: Lock,
     number: "04",
-    title: "No Innovation Path",
-    desc: "Legacy vendors aren't investing in AI for Indian MTSOs. You're stuck with technology from 2010.",
+    title: "Capacity Locked to Headcount",
+    desc: "Need to process more volume? You hire more editors. That means more salaries, more management, and the same thin margins at scale.",
   },
 ];
 
@@ -38,10 +38,10 @@ export default function ProblemSection() {
         <AnimatedSection>
           <SectionLabel>The Problem</SectionLabel>
           <h2 className="text-3xl lg:text-5xl font-extrabold text-foreground leading-tight max-w-3xl">
-            Indian MTSOs Are Running on 15-Year-Old Technology
+            Your Editors Are Your Biggest Cost — And Your Biggest Opportunity
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
-            Most MTSOs cobble together legacy transcription platforms with separate HRMS tools, manual processes, and zero AI.
+            Indian MTSOs are trapped in a labor-intensive model where capacity = headcount. Every new client means more hires, more overhead, and the same razor-thin margins.
           </p>
         </AnimatedSection>
 

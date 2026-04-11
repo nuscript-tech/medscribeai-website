@@ -15,9 +15,9 @@ export default function Home() {
       <SolutionSection />
       <ProofSection />
       <CTASection
-        title="Ready to Transform Your MTSO Operations?"
-        description="Join the pilot program — 1 month free. Risk-free onboarding. See the productivity gains and cost savings firsthand."
-        primaryLabel="Request a Demo"
+        title="Ready to Double Your Capacity?"
+        description="Start a 10-day production pilot — zero cost, zero risk, operational by tomorrow morning. See the productivity gains and EBITDA impact with your own team and data."
+        primaryLabel="Start 10-Day Pilot"
         primaryLink="/request-demo"
       />
     </>

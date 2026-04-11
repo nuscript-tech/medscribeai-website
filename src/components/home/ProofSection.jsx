@@ -3,9 +3,18 @@ import { motion } from "framer-motion";
 import AnimatedSection from "../shared/AnimatedSection";
 
 const proofStats = [
-  { value: "90+", label: "Daily Active Users" },
-  { value: "30+", label: "Healthcare Practices Served" },
-  { value: "1M+", label: "Lines Processed Monthly" },
+  { value: "75K+", label: "Minutes Processed Monthly" },
+  { value: "60+", label: "Active Editors on Platform" },
+  { value: "2x", label: "Documented Productivity Gain" },
+];
+
+const ebitdaRows = [
+  { metric: "Editors required for 700K lines", before: "50–60", after: "25–30" },
+  { metric: "Monthly editor labor cost", before: "₹25–30L", after: "₹12–15L" },
+  { metric: "Platform cost", before: "—", after: "~₹4.7L" },
+  { metric: "Net monthly savings", before: "—", after: "₹8–10L", highlight: true },
+  { metric: "EBITDA margin", before: "~15%", after: "~28–32%", highlight: true },
+  { metric: "Annualized savings", before: "—", after: "₹1–1.2 Cr", highlight: true },
 ];
 
 export default function ProofSection() {
@@ -22,11 +31,12 @@ export default function ProofSection() {
               Not a Prototype. A Production Platform.
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
-              MedScribeAI is in active daily production — processing real medical dictation for real healthcare practices, every single day.
+              MedScribeAI is processing real medical dictation for real MTSOs, every single day — with verified operational metrics.
             </p>
           </div>
         </AnimatedSection>
 
+        {/* Track Record Stats */}
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6">
           {proofStats.map((stat, i) => (
             <motion.div
@@ -47,6 +57,69 @@ export default function ProofSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* EBITDA Impact Table */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-16"
+        >
+          <div className="text-center mb-8">
+            <h3 className="text-2xl lg:text-3xl font-extrabold text-foreground">
+              The EBITDA Impact
+            </h3>
+            <p className="mt-2 text-muted-foreground">
+              Illustrative financial impact at 700,000 lines/month
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm max-w-3xl mx-auto">
+            {/* Table header */}
+            <div className="grid grid-cols-3 bg-slate-800 text-white">
+              <div className="p-4 text-sm font-bold">Metric</div>
+              <div className="p-4 text-sm font-bold text-center">Before</div>
+              <div className="p-4 text-sm font-bold text-center">With MedScribeAI</div>
+            </div>
+            {/* Table rows */}
+            {ebitdaRows.map((row, i) => (
+              <div
+                key={row.metric}
+                className={`grid grid-cols-3 border-t border-slate-100 ${
+                  row.highlight ? "bg-emerald-50" : i % 2 === 0 ? "bg-slate-50/50" : "bg-white"
+                }`}
+              >
+                <div className={`p-4 text-sm ${row.highlight ? "font-bold text-foreground" : "text-muted-foreground"}`}>{row.metric}</div>
+                <div className={`p-4 text-sm text-center ${row.highlight ? "font-bold text-muted-foreground" : "text-muted-foreground"}`}>{row.before}</div>
+                <div className={`p-4 text-sm text-center font-bold ${row.highlight ? "text-emerald-600" : "text-foreground"}`}>{row.after}</div>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-4 text-center text-xs text-muted-foreground">
+            Illustrative projections based on platform averages. Actual results vary by volume, baseline efficiency, and team adoption.
+          </p>
+        </motion.div>
+
+        {/* The Bottom Line */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mt-12 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl border border-emerald-200 p-8 lg:p-10 text-center"
+        >
+          <p className="text-xl lg:text-2xl font-bold text-foreground">
+            A 15% margin becoming 30% doesn't just improve cash flow.
+          </p>
+          <p className="mt-2 text-2xl lg:text-3xl font-extrabold text-emerald-600">
+            It doubles your company's valuation.
+          </p>
+          <p className="mt-3 text-base text-muted-foreground italic">
+            Your typists become editors. Your editors become a force multiplier.
+          </p>
+        </motion.div>
       </div>
     </section>
   );

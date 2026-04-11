@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { TrendingDown, Zap, Target, Clock } from "lucide-react";
+import { Zap, TrendingUp, Mic, Clock } from "lucide-react";
 
 const stats = [
-  { value: "50%", label: "Cost Reduction", icon: TrendingDown },
-  { value: "2x", label: "CDE Productivity", icon: Zap },
-  { value: "98-99%", label: "Accuracy Rate", icon: Target },
+  { value: "2x", label: "Force Multiplier on Capacity", icon: Zap },
+  { value: "15%→30%", label: "EBITDA Margin Shift", icon: TrendingUp },
+  { value: "75K+", label: "Minutes/Month in Production", icon: Mic },
   { value: "<12hr", label: "Turnaround Time", icon: Clock },
 ];
 

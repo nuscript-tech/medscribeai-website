@@ -101,7 +101,7 @@ export default function Pricing() {
               <span className="text-primary">No Surprises.</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              Simple hybrid pricing: a monthly base fee covers HRMS value, plus a per-line processing fee covers the AI transcription platform.
+              Simple hybrid pricing: a monthly base fee plus a per-line processing fee. 100% INR — no dollar exposure. Start with a free 10-day production pilot.
             </p>
           </motion.div>
         </div>
@@ -117,8 +117,8 @@ export default function Pricing() {
                   <Sparkles className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white">Pilot Program</h3>
-                  <p className="text-white/80 text-sm">1 month free. Risk-free onboarding.</p>
+                  <h3 className="text-lg font-bold text-white">10-Day Production Pilot</h3>
+                  <p className="text-white/80 text-sm">Zero cost. Zero risk. Operational by tomorrow morning. Auto-activates on Day 11.</p>
                 </div>
               </div>
               <Link to="/request-demo">

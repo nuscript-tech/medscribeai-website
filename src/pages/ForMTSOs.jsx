@@ -36,11 +36,11 @@ export default function ForMTSOs() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <SectionLabel>For MTSO Owners & Operations Heads</SectionLabel>
             <h1 className="text-4xl lg:text-6xl font-extrabold text-foreground leading-tight max-w-3xl">
-              The Math That Changes{" "}
-              <span className="text-primary">Everything</span>
+              The Math That Doubles{" "}
+              <span className="text-primary">Your Valuation</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              Your biggest cost is CDE payroll. MedScribeAI's AI pipeline doubles CDE productivity — meaning you need half the CDEs for the same volume. Combined with replacing your legacy platform and HRMS, the savings are transformative.
+              Labor is 60–70% of your operating costs. MedScribeAI is a force multiplier — your editors evolve from typists to AI-assisted editors, processing 2x the volume. Your EBITDA margin goes from 15% to 30%. That's not just savings — it's a fundamentally different company.
             </p>
           </motion.div>
         </div>
@@ -147,7 +147,7 @@ export default function ForMTSOs() {
 
       <CTASection
         title="See the Numbers for Your MTSO"
-        description="Share your monthly volume and current costs — we'll build a custom ROI analysis for your operation. Start with a free pilot."
+        description="Share your monthly volume and current costs — we'll build a custom EBITDA impact analysis for your operation. Start with a free 10-day production pilot."
       />
     </>
   );
