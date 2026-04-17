@@ -30,7 +30,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm leading-relaxed max-w-md text-white/60">
-              The modern SaaS platform for Indian MTSOs — replacing legacy transcription platforms and standalone HRMS with AI-powered transcription, QA workflows, and workforce management in a single product.
+              The AI force multiplier for Indian MTSOs — double your capacity without adding headcount. AI-powered transcription, complete QA workflows, and built-in workforce management in a single platform.
             </p>
             <a href="mailto:hello@medscribeai.in" className="inline-flex items-center gap-2 mt-4 text-sm hover:opacity-80 transition-colors" style={{color: "#00C4A7"}}>
               <Mail className="w-4 h-4" />
