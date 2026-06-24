@@ -53,7 +53,7 @@ export default function SecuritySection() {
         <AnimatedSection>
           <div className="text-center">
             <SectionLabel>Security &amp; Compliance</SectionLabel>
-            <h2 className="text-3xl lg:text-5xl font-extrabold text-foreground leading-tight max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground leading-tight max-w-3xl mx-auto">
               Built for the Standards Healthcare Demands
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">

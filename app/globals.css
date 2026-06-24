@@ -46,7 +46,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-jakarta text-[15px] leading-relaxed;
+    @apply bg-background text-foreground font-sora text-[15px] leading-relaxed;
   }
 }
 

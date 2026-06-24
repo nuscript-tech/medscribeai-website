@@ -63,7 +63,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <SectionLabel>About MedScribeAI</SectionLabel>
-            <h1 className="text-4xl lg:text-6xl font-extrabold text-foreground leading-tight max-w-3xl">
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight max-w-3xl">
               Built by People Who Know{" "}
               <span className="text-primary">the Floor.</span>
             </h1>
@@ -113,7 +113,7 @@ export default function About() {
       <section className="py-24 lg:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground mb-14">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-14">
               Our Journey
             </h2>
           </AnimatedSection>
@@ -122,7 +122,7 @@ export default function About() {
               <AnimatedSection key={m.year} delay={i * 0.1}>
                 <div className="flex gap-6 sm:gap-8">
                   <div className="flex-shrink-0 w-32 text-right">
-                    <span className="text-2xl font-extrabold text-primary whitespace-nowrap">
+                    <span className="text-2xl font-bold text-primary whitespace-nowrap">
                       {m.year}
                     </span>
                   </div>
@@ -213,7 +213,7 @@ export default function About() {
               </div>
               <div className="relative z-10">
                 <h2
-                  className="text-4xl lg:text-5xl font-extrabold max-w-2xl mx-auto leading-tight"
+                  className="text-4xl lg:text-5xl font-bold max-w-2xl mx-auto leading-tight"
                   style={{ color: "#1B1F3B" }}
                 >
                   Ready to Modernize Your Operation?

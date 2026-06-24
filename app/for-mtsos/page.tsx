@@ -70,7 +70,7 @@ export default function ForMTSOs() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <SectionLabel>For MTSO Owners &amp; Operations Heads</SectionLabel>
-            <h1 className="text-4xl lg:text-6xl font-extrabold text-foreground leading-tight max-w-3xl">
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight max-w-3xl">
               Grow the Work{" "}
               <span className="text-primary">Without Growing the Team</span>
             </h1>
@@ -89,7 +89,7 @@ export default function ForMTSOs() {
       <section className="pb-24 lg:pb-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h2 className="text-2xl lg:text-3xl font-extrabold text-foreground mb-2">
+            <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-2">
               Manual Operation vs. MedScribeAI
             </h2>
             <p className="text-muted-foreground mb-8">
@@ -145,7 +145,7 @@ export default function ForMTSOs() {
                       <td
                         className={`px-7 py-4 text-sm text-center ${
                           row.highlight
-                            ? "text-destructive font-extrabold text-base"
+                            ? "text-destructive font-bold text-base"
                             : "text-slate-500"
                         }`}
                       >
@@ -154,7 +154,7 @@ export default function ForMTSOs() {
                       <td
                         className={`px-7 py-4 text-sm text-center ${
                           row.highlight
-                            ? "text-primary font-extrabold text-base"
+                            ? "text-primary font-bold text-base"
                             : "text-slate-500"
                         }`}
                       >
@@ -173,7 +173,7 @@ export default function ForMTSOs() {
               baseline efficiency, and team adoption.
             </p>
             <div className="mt-8 bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center">
-              <div className="text-2xl lg:text-3xl font-extrabold text-primary">
+              <div className="text-2xl lg:text-3xl font-bold text-primary">
                 Capacity stops being a hiring decision.
               </div>
               <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">
@@ -191,7 +191,7 @@ export default function ForMTSOs() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <SectionLabel>Beyond Cost</SectionLabel>
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground leading-tight max-w-2xl">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight max-w-2xl">
               Quality and Speed Improve Together
             </h2>
           </AnimatedSection>
@@ -243,7 +243,7 @@ export default function ForMTSOs() {
               </div>
               <div className="relative z-10">
                 <h2
-                  className="text-4xl lg:text-5xl font-extrabold max-w-2xl mx-auto leading-tight"
+                  className="text-4xl lg:text-5xl font-bold max-w-2xl mx-auto leading-tight"
                   style={{ color: "#1B1F3B" }}
                 >
                   See the Impact for Your Operation

@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        jakarta: ["var(--font-jakarta)", "sans-serif"],
+        sora: ["var(--font-sora)", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

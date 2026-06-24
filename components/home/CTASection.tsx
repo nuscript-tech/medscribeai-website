@@ -31,7 +31,7 @@ export default function CTASection() {
 
             <div className="relative z-10">
               <h2
-                className="text-4xl lg:text-5xl font-extrabold max-w-2xl mx-auto leading-tight"
+                className="text-4xl lg:text-5xl font-bold max-w-2xl mx-auto leading-tight"
                 style={{ color: "#1B1F3B" }}
               >
                 Ready to Double Your Capacity?

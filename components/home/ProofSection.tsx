@@ -28,7 +28,7 @@ export default function ProofSection() {
               <span className="w-2 h-2 rounded-full bg-primary" />
               Live in Production
             </div>
-            <h2 className="text-3xl lg:text-5xl font-extrabold text-foreground leading-tight max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground leading-tight max-w-3xl mx-auto">
               Not a Prototype. A Production Platform.
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -57,7 +57,7 @@ export default function ProofSection() {
               <div className="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-secondary/20 to-transparent pointer-events-none" />
               <div className="relative">
-                <div className="text-5xl lg:text-6xl font-extrabold bg-gradient-to-br from-primary via-blue-500 to-primary/70 bg-clip-text text-transparent pb-1">
+                <div className="text-5xl lg:text-6xl font-bold bg-gradient-to-br from-primary via-blue-500 to-primary/70 bg-clip-text text-transparent pb-1">
                   {stat.value}
                 </div>
                 <div className="mt-3 text-sm font-semibold text-muted-foreground uppercase tracking-widest">
@@ -86,7 +86,7 @@ export default function ProofSection() {
             >
               <TrendingUp className="w-6 h-6" />
             </div>
-            <h3 className="text-2xl lg:text-3xl font-extrabold text-foreground">
+            <h3 className="text-2xl lg:text-3xl font-bold text-foreground">
               The Capacity Shift
             </h3>
             <p className="mt-2 text-muted-foreground">
@@ -181,7 +181,7 @@ export default function ProofSection() {
             <p className="text-lg lg:text-xl font-semibold text-muted-foreground">
               Capacity stops being a hiring decision.
             </p>
-            <p className="mt-3 text-3xl lg:text-4xl font-extrabold bg-gradient-to-br from-primary via-blue-500 to-primary/70 bg-clip-text text-transparent">
+            <p className="mt-3 text-3xl lg:text-4xl font-bold bg-gradient-to-br from-primary via-blue-500 to-primary/70 bg-clip-text text-transparent">
               Grow the work without growing the team.
             </p>
             <div className="mt-6 w-16 h-px mx-auto bg-gradient-to-r from-transparent via-primary/40 to-transparent" />

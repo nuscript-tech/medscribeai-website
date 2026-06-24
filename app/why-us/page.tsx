@@ -71,7 +71,7 @@ export default function WhyUs() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <SectionLabel>Why MedScribeAI</SectionLabel>
-            <h1 className="text-4xl lg:text-6xl font-extrabold text-foreground leading-tight max-w-3xl">
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight max-w-3xl">
               Purpose-Built.{" "}
               <span className="text-primary">Production-Proven.</span>
             </h1>
@@ -130,7 +130,7 @@ export default function WhyUs() {
           <AnimatedSection>
             <div className="text-center mb-14">
               <SectionLabel>The Difference</SectionLabel>
-              <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
                 Manual Stack vs. MedScribeAI
               </h2>
               <p className="mt-4 text-muted-foreground text-lg max-w-xl mx-auto">
@@ -230,7 +230,7 @@ export default function WhyUs() {
               </div>
               <div className="relative z-10">
                 <h2
-                  className="text-4xl lg:text-5xl font-extrabold max-w-2xl mx-auto leading-tight"
+                  className="text-4xl lg:text-5xl font-bold max-w-2xl mx-auto leading-tight"
                   style={{ color: "#1B1F3B" }}
                 >
                   Ready to See the Difference?

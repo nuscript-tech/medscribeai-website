@@ -36,7 +36,7 @@ export default function StatsBar() {
               >
                 <stat.icon className="w-5 h-5" />
               </div>
-              <div className="text-3xl lg:text-4xl font-extrabold tracking-tight bg-gradient-to-br from-primary to-blue-600 bg-clip-text text-transparent">
+              <div className="text-3xl lg:text-4xl font-bold tracking-tight bg-gradient-to-br from-primary to-blue-600 bg-clip-text text-transparent">
                 {stat.value}
               </div>
               <div className="mt-1 text-sm font-semibold text-muted-foreground">

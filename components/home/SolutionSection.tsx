@@ -39,7 +39,7 @@ export default function SolutionSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <SectionLabel>The Platform</SectionLabel>
-          <h2 className="text-3xl lg:text-5xl font-extrabold text-foreground leading-tight max-w-3xl">
+          <h2 className="text-3xl lg:text-5xl font-bold text-foreground leading-tight max-w-3xl">
             Two Engines. One Platform.
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl">

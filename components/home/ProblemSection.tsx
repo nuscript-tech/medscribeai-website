@@ -35,7 +35,7 @@ export default function ProblemSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <SectionLabel>The Squeeze</SectionLabel>
-          <h2 className="text-3xl lg:text-5xl font-extrabold text-foreground leading-tight max-w-3xl">
+          <h2 className="text-3xl lg:text-5xl font-bold text-foreground leading-tight max-w-3xl">
             Transcription Operations Are Trapped Between Cost and Capacity
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl">

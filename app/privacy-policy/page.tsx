@@ -95,7 +95,7 @@ export default function PrivacyPolicy() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <SectionLabel>Legal</SectionLabel>
-          <h1 className="text-4xl lg:text-6xl font-extrabold text-foreground leading-tight">
+          <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
             Privacy Policy
           </h1>
           <p className="text-muted-foreground mt-2">

@@ -189,7 +189,7 @@ export default function Platform() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <SectionLabel>Platform Overview</SectionLabel>
-            <h1 className="text-4xl lg:text-6xl font-extrabold text-foreground leading-tight max-w-3xl">
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight max-w-3xl">
               Two Engines.{" "}
               <span className="text-primary">One Platform.</span>
             </h1>
@@ -270,7 +270,7 @@ export default function Platform() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <SectionLabel>Production Engine</SectionLabel>
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground leading-tight max-w-2xl">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight max-w-2xl">
               The AI Transcription Pipeline
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
@@ -288,7 +288,7 @@ export default function Platform() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <SectionLabel>Quality at Scale</SectionLabel>
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground leading-tight max-w-2xl">
+            <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight max-w-2xl">
               A Complete QA Workflow
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl">
@@ -307,7 +307,7 @@ export default function Platform() {
           <AnimatedSection>
             <SectionLabel>Management Suite</SectionLabel>
             <div className="flex flex-wrap items-center gap-3">
-              <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
                 Workforce Management — Built In
               </h2>
               <span className="inline-flex px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm font-bold">
@@ -352,10 +352,10 @@ export default function Platform() {
                   >
                     <Cloud className="w-7 h-7" />
                   </div>
-                  <h3 className="text-2xl lg:text-3xl font-extrabold text-foreground">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-foreground">
                     100% Cloud. Zero Installation.
                   </h3>
-                  <p className="text-2xl lg:text-3xl font-extrabold bg-gradient-to-br from-primary via-blue-500 to-primary/70 bg-clip-text text-transparent">
+                  <p className="text-2xl lg:text-3xl font-bold bg-gradient-to-br from-primary via-blue-500 to-primary/70 bg-clip-text text-transparent">
                     Operational by Tomorrow Morning.
                   </p>
                 </div>
@@ -411,7 +411,7 @@ export default function Platform() {
               </div>
               <div className="relative z-10">
                 <h2
-                  className="text-4xl lg:text-5xl font-extrabold max-w-2xl mx-auto leading-tight"
+                  className="text-4xl lg:text-5xl font-bold max-w-2xl mx-auto leading-tight"
                   style={{ color: "#1B1F3B" }}
                 >
                   See the Platform in Action

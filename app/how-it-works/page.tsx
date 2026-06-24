@@ -113,7 +113,7 @@ export default function HowItWorks() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <SectionLabel>How It Works</SectionLabel>
-            <h1 className="text-4xl lg:text-6xl font-extrabold text-foreground leading-tight max-w-3xl">
+            <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight max-w-3xl">
               From Audio to Approved Document{" "}
               <span className="text-primary">in 7 Steps</span>
             </h1>
@@ -188,7 +188,7 @@ export default function HowItWorks() {
           <AnimatedSection>
             <div className="text-center mb-14">
               <SectionLabel>Continuous Improvement</SectionLabel>
-              <h2 className="text-3xl lg:text-4xl font-extrabold text-foreground leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
                 The Self-Improving Learning Loop
               </h2>
               <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -241,7 +241,7 @@ export default function HowItWorks() {
                   <TrendingUp className="w-7 h-7" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-extrabold text-foreground mb-2">
+                  <h3 className="text-xl font-bold text-foreground mb-2">
                     The Compounding Result
                   </h3>
                   <p className="text-muted-foreground leading-relaxed text-base">
@@ -256,7 +256,7 @@ export default function HowItWorks() {
                   </p>
                 </div>
                 <div className="shrink-0 text-center lg:text-right">
-                  <div className="text-4xl font-extrabold text-primary">
+                  <div className="text-4xl font-bold text-primary">
                     Up to 2×
                   </div>
                   <div className="text-sm text-muted-foreground font-medium mt-1">
@@ -292,7 +292,7 @@ export default function HowItWorks() {
               </div>
               <div className="relative z-10">
                 <h2
-                  className="text-4xl lg:text-5xl font-extrabold max-w-2xl mx-auto leading-tight"
+                  className="text-4xl lg:text-5xl font-bold max-w-2xl mx-auto leading-tight"
                   style={{ color: "#1B1F3B" }}
                 >
                   AI Does the Heavy Lifting. Your Team Ensures Perfection.
