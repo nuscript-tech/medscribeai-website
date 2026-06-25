@@ -126,7 +126,7 @@ export default function WhyUs() {
         />
         <div
           className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full blur-3xl -z-10"
-          style={{ background: "rgba(0,196,167,0.06)" }}
+          style={{ background: "rgba(13,148,136,0.06)" }}
         />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -228,7 +228,7 @@ export default function WhyUs() {
                 />
                 <div
                   className="absolute bottom-0 right-0 w-72 h-72 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"
-                  style={{ background: "rgba(0,196,167,0.12)" }}
+                  style={{ background: "rgba(13,148,136,0.12)" }}
                 />
               </div>
               <div className="relative z-10">

@@ -26,8 +26,8 @@
     --muted: 216 33% 97%;
     --muted-foreground: 0 0% 29%;         /* #4A4A4A Text Grey */
 
-    /* Accent: Mint #00C4A7 */
-    --accent: 171 100% 38%;
+    /* Accent: Teal-600 #0D9488 */
+    --accent: 173 80% 32%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;

@@ -409,7 +409,7 @@ export default function Platform() {
                 />
                 <div
                   className="absolute bottom-0 right-0 w-72 h-72 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"
-                  style={{ background: "rgba(0,196,167,0.12)" }}
+                  style={{ background: "rgba(13,148,136,0.12)" }}
                 />
               </div>
               <div className="relative z-10">

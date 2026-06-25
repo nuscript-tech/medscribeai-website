@@ -183,7 +183,7 @@ export default function HowItWorks() {
           />
           <div
             className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full blur-3xl"
-            style={{ background: "rgba(0,196,167,0.06)" }}
+            style={{ background: "rgba(13,148,136,0.06)" }}
           />
         </div>
 
@@ -237,7 +237,7 @@ export default function HowItWorks() {
             <div className="relative overflow-hidden rounded-3xl border border-primary/15 bg-white p-8 lg:p-12 shadow-[0_2px_24px_0_rgba(42,111,242,0.08)]">
               <div
                 className="absolute top-0 left-0 w-full h-1 rounded-t-3xl"
-                style={{ background: "linear-gradient(90deg, #2A6FF2, #00C4A7)" }}
+                style={{ background: "linear-gradient(90deg, #2A6FF2, #0D9488)" }}
               />
               <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8">
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
@@ -290,7 +290,7 @@ export default function HowItWorks() {
                 />
                 <div
                   className="absolute bottom-0 right-0 w-72 h-72 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"
-                  style={{ background: "rgba(0,196,167,0.12)" }}
+                  style={{ background: "rgba(13,148,136,0.12)" }}
                 />
               </div>
               <div className="relative z-10">

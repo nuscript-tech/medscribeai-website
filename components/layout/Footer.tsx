@@ -38,7 +38,7 @@ export default function Footer() {
             <a
               href="mailto:marketing@nuscript.ai"
               className="inline-flex items-center gap-2 mt-4 text-sm hover:opacity-80 transition-opacity"
-              style={{ color: "#00C4A7" }}
+              style={{ color: "#0D9488" }}
             >
               <Mail className="w-4 h-4" />
               marketing@nuscript.ai
