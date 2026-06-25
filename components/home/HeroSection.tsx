@@ -66,7 +66,7 @@ export default function HeroSection() {
           >
             Double Your Capacity.{" "}
             <br className="hidden sm:block" />
-            <span className="text-primary">Zero New Hires.</span>
+            <span className="text-accent">Zero New Hires.</span>
           </motion.h1>
 
           <motion.p

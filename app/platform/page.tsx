@@ -188,10 +188,13 @@ export default function Platform() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <SectionLabel>Platform Overview</SectionLabel>
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary border border-accent text-sm font-medium text-primary mb-2">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              Platform Overview
+            </span>
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight max-w-3xl">
               Two Engines.{" "}
-              <span className="text-primary">One Platform.</span>
+              <span className="text-accent">One Platform.</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
               A Production Engine that turns audio into EHR-ready documentation,

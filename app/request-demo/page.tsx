@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Clock, Users, Target, Mail, Sparkles, Send, CheckCircle2 } from "lucide-react";
+import { Clock, Users, Target, Mail, Send, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -40,7 +40,7 @@ const copy: Record<
     eyebrow: "Request a Demo",
     heading: (
       <>
-        See <span className="text-primary">MedScribeAI</span> in Action
+        See <span className="text-accent">MedScribeAI</span> in Action
       </>
     ),
     sub: "Share a few details about your operation — volume, current setup, and goals. We'll walk you through both engines, show the AI pipeline live, and talk through the capacity and margin impact for your operation.",
@@ -141,7 +141,7 @@ export default function RequestDemo() {
             transition={{ duration: 0.7 }}
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary border border-accent text-sm font-medium text-primary mb-6">
-              <Sparkles className="w-4 h-4" />
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               {c.eyebrow}
             </div>
 

@@ -69,10 +69,13 @@ export default function ForMTSOs() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <SectionLabel>For MTSO Owners &amp; Operations Heads</SectionLabel>
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary border border-accent text-sm font-medium text-primary mb-2">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              For MTSO Owners &amp; Operations Heads
+            </span>
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight max-w-3xl">
               Grow the Work{" "}
-              <span className="text-primary">Without Growing the Team</span>
+              <span className="text-accent">Without Growing the Team</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
               Labor is the bulk of your cost base. MedScribeAI breaks the link

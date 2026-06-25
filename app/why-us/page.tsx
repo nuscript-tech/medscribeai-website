@@ -70,10 +70,13 @@ export default function WhyUs() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <SectionLabel>Why MedScribeAI</SectionLabel>
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary border border-accent text-sm font-medium text-primary mb-2">
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              Why MedScribeAI
+            </span>
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight max-w-3xl">
               Purpose-Built.{" "}
-              <span className="text-primary">Production-Proven.</span>
+              <span className="text-accent">Production-Proven.</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
               MedScribeAI isn't another generic transcription tool. It's the AI
